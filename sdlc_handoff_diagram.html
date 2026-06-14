@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI-native SDLC maturity model — handoff diagram</title>
+<style>
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #2C2C2A;
+    background: #FFFFFF;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #5F5E5A;
+    margin-bottom: 24px;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<h1>AI-native SDLC maturity model &mdash; handoff diagram</h1>
+<div class="subtitle">Sequential, governing, and loop-closing relationships across the 13 dimensions</div>
+<svg width="680" height="1130" viewBox="0 0 680 1130" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>AI-native SDLC maturity model handoff diagram</title>
+<desc>Combined view of sequential, governing, and loop-closing relationships across the 13 dimensions</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#993C1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-teal2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="680" height="1130" fill="#FFFFFF"/>
+<g transform="translate(0,0)">
+<!-- D1 -->
+<rect x="40" y="40" width="180" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="130" y="62" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">D1. Market discovery</text>
+<text x="130" y="82" text-anchor="middle" font-size="12" fill="#3C3489">Continuous, AI-assisted</text>
+
+<!-- D2 -->
+<rect x="250" y="40" width="180" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="340" y="62" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">D2. Persona development</text>
+<text x="340" y="82" text-anchor="middle" font-size="12" fill="#3C3489">Live, shared with GTM</text>
+
+<!-- D3 -->
+<rect x="460" y="40" width="180" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="550" y="62" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">D3. Positioning</text>
+<text x="550" y="82" text-anchor="middle" font-size="12" fill="#3C3489">Live competitive feed</text>
+
+<!-- arrows D1->D2, D2->D3 -->
+<line x1="220" y1="68" x2="248" y2="68" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="430" y1="68" x2="458" y2="68" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- D3 down and left into fused box, D2 straight down -->
+<path d="M550 96 L550 130 L130 130 L130 164" fill="none" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="340" y1="96" x2="340" y2="130" stroke="#534AB7" stroke-width="1.5"/>
+
+<!-- Fused container -->
+<rect x="60" y="180" width="560" height="220" rx="16" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="80" y="212" font-size="14" font-weight="500" fill="#04342C">Fused specification motion</text>
+<text x="80" y="232" font-size="12" fill="#0F6E56">D4, D5, D7 produced as one governed step</text>
+
+<!-- D4 -->
+<rect x="80" y="250" width="170" height="120" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="165" y="294" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">D4. Specification</text>
+<text x="165" y="314" text-anchor="middle" font-size="12" fill="#0F6E56">Precise, testable,</text>
+<text x="165" y="330" text-anchor="middle" font-size="12" fill="#0F6E56">machine-actionable</text>
+
+<!-- D5 -->
+<rect x="265" y="250" width="170" height="120" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="350" y="294" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">D5. Prototype</text>
+<text x="350" y="314" text-anchor="middle" font-size="12" fill="#0F6E56">Governed boundary</text>
+<text x="350" y="330" text-anchor="middle" font-size="12" fill="#0F6E56">to production</text>
+
+<!-- D7 -->
+<rect x="450" y="250" width="170" height="120" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="535" y="294" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">D7. Failing test</text>
+<text x="535" y="314" text-anchor="middle" font-size="12" fill="#0F6E56">Generated alongside</text>
+<text x="535" y="330" text-anchor="middle" font-size="12" fill="#0F6E56">spec and prototype</text>
+
+<line x1="250" y1="310" x2="263" y2="310" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow-teal)"/>
+<line x1="435" y1="310" x2="448" y2="310" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow-teal)"/>
+
+
+</g>
+<line x1="350" y1="400" x2="340" y2="490" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+<g transform="translate(0,460)">
+<g transform="translate(0,-40)"><!-- D6 -->
+<rect x="160" y="70" width="170" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="245" y="92" text-anchor="middle" font-size="14" font-weight="500" fill="#4A1B0C">D6. Architecture</text>
+<text x="245" y="112" text-anchor="middle" font-size="12" fill="#993C1D">governance (constrains)</text>
+
+<!-- D11 -->
+<rect x="350" y="70" width="170" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="435" y="92" text-anchor="middle" font-size="14" font-weight="500" fill="#4A1B0C">D11. Security</text>
+<text x="435" y="112" text-anchor="middle" font-size="12" fill="#993C1D">and compliance (constrains)</text>
+
+<!-- arrows from D6/D11 down to D8 -->
+<path d="M245 126 L245 145 L260 145 L260 178" fill="none" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arrow-coral)"/>
+<path d="M435 126 L435 145 L260 145" fill="none" stroke="#993C1D" stroke-width="1.5"/>
+
+<!-- D8 -->
+<rect x="170" y="180" width="200" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="270" y="202" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">D8. Verification</text>
+<text x="270" y="222" text-anchor="middle" font-size="12" fill="#0F6E56">Tiered, programmatic</text>
+
+<!-- D8 down to D9 and D10 -->
+<path d="M270 236 L270 255 L170 255 L170 280" fill="none" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow-teal2)"/>
+<path d="M270 236 L270 255 L530 255 L530 280" fill="none" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow-teal2)"/>
+
+<!-- D9 -->
+<rect x="80" y="280" width="180" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="170" y="302" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">D9. Environments</text>
+<text x="170" y="322" text-anchor="middle" font-size="12" fill="#0F6E56">Self-provision, cleanup</text>
+
+<!-- D10 -->
+<rect x="440" y="280" width="180" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="530" y="302" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">D10. Release</text>
+<text x="530" y="322" text-anchor="middle" font-size="12" fill="#0F6E56">On-demand, compliant</text></g>
+</g>
+<path d="M 170 756 L 170 808.0 L 340 808.0" fill="none" stroke="#5F5E5A" stroke-width="1.5"/><path d="M 530 756 L 530 808.0 L 340 808.0" fill="none" stroke="#5F5E5A" stroke-width="1.5"/><line x1="340" y1="808.0" x2="340" y2="860" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+<g transform="translate(0,830)">
+<g transform="translate(0,-40)"><!-- D12 -->
+<rect x="250" y="70" width="180" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="340" y="92" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">D12. Observability</text>
+<text x="340" y="112" text-anchor="middle" font-size="12" fill="#3C3489">Traces and telemetry</text>
+
+<!-- loop back to D1 -->
+<path d="M250 98 L80 98 L80 60" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+<text x="80" y="34" text-anchor="middle" font-size="12" fill="#3D3D3A">back to D1</text>
+<text x="80" y="50" text-anchor="middle" font-size="12" fill="#3D3D3A">(market discovery)</text>
+
+<!-- D13 container -->
+<rect x="40" y="160" width="600" height="120" rx="16" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="60" y="194" font-size="14" font-weight="500" fill="#2C2C2A">D13. Feedback loop velocity</text>
+<text x="60" y="216" font-size="12" fill="#5F5E5A">System-level cycle time, not a node in the chain</text>
+<text x="60" y="238" font-size="12" fill="#5F5E5A">Measures the total transit time across D1 through D12</text></g>
+</g>
+</svg>
+</body>
+</html>
