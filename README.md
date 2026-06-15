@@ -130,7 +130,12 @@ Straw-man complete. All 13 dimensions drafted A–E. Ready for review by domain 
 ## Files in this repo
 
 - `ai_native_sdlc_maturity_model_STRAWMAN.xlsx` — the full A–E maturity matrix for all 13 dimensions
+- `ai_native_sdlc_maturity_model_MATRIX.md` — markdown version of the matrix only
 - `sdlc_handoff_diagram.png` — visual diagram of the handoff structure described above
+- `sdlc_handoff_diagram.html` — visual diagram of the handoff structure described above
+- `transition_character_grid.xlsx` — working document to capture maturity transion lift characteristics
+- `transition_character_grid.md` — markdown version of working document to capture maturity transion lift characteristics
+- `README.md` — Start here
 - `LICENSE` — CC BY 4.0
 
 ---
