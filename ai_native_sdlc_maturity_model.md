@@ -1,5 +1,7 @@
 # AI-Native SDLC Maturity Model — Matrix
 
+**Version 1.0.0 — locked 2026-07-15.**
+
 This is the full A–E maturity matrix for all 13 dimensions, readable in-browser and directly usable as input to AI tools. **This markdown document is the source of truth** -- `ai_native_sdlc_maturity_model.xlsx` is a derived distribution rendering of it; if the two ever diverge, this document is authoritative and the spreadsheet should be regenerated.
 
 For the design principles, handoff structure, research finding, and open items behind this matrix, see `README.md`. For the diagram of how these 13 dimensions hand off to each other, see `sdlc_handoff_diagram.png` / `sdlc_handoff_diagram.html`.

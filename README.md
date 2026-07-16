@@ -1,5 +1,7 @@
 # AI-Native SDLC Maturity Model — working framework
 
+**Version 1.0.0 — locked 2026-07-15.** Changes from this baseline are tracked in `CHANGELOG.md` and diff against the `v1.0.0` tag.
+
 ## Purpose
 
 A diagnostic framework for assessing the maturity of a software delivery system that assumes an AI-native baseline — not a framework for transitioning a traditional SDLC onto AI tooling. The goal is a current-state read with enough granularity to identify realistically adjacent next states, not a description of pinnacle practice.
@@ -138,6 +140,7 @@ Locked baseline. All 13 dimensions defined A–E. The open items above are carri
 - `transition_character_grid.xlsx` — working document to capture maturity transition lift characteristics
 - `transition_character_grid.md` — markdown version of working document to capture maturity transition lift characteristics
 - `feedback_log.md` — public log of feedback received and how each point was resolved
+- `CHANGELOG.md` — version history from the v1.0.0 baseline
 - `README.md` — Start here
 - `LICENSE.md` — CC BY 4.0
 
