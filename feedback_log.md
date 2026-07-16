@@ -52,10 +52,10 @@ Weekly batch review: scan for 🆕 and 🔍 first. 🕒 entries are worth a peri
 ## Resolved (✅)
 
 ### F-004 — D13 as executive anchor
-**Status:** ✅ Resolved — agreed, to be reflected in framing/emphasis
+**Status:** ✅ Resolved — reflected in v1.0 (README framing, 2026-07-15)
 **Source:** Thomas, LinkedIn feedback, 2026-06-16 (recommendation 6)
 **Point:** D13 (feedback loop velocity) is the dimension that connects the delivery system to competitiveness, and could become the executive anchor for the whole framework rather than sitting as the 13th of 13 dimensions.
-**Resolution:** Agreed. Aligns with internal framing of the AI-Native Delivery Cycle as the differentiator — if cycle time can be accurately measured and safely manipulated, an organization can deliver functionality better and faster than the rest of the market. D13 should be elevated in how the model is presented/discussed, even if its position in the numbered list doesn't change.
+**Resolution:** Agreed. Aligns with internal framing of the AI-Native Delivery Cycle as the differentiator — if cycle time can be accurately measured and safely manipulated, an organization can deliver functionality better and faster than the rest of the market. D13 should be elevated in how the model is presented/discussed, even if its position in the numbered list doesn't change. **Reflected 2026-07-15, as part of the v1.0 lock:** the README's Purpose section now establishes D13 as the model's executive anchor, and D13's own entry is titled and framed as the capstone the other twelve dimensions feed. Position in the numbered list unchanged, as resolved.
 
 ---
 

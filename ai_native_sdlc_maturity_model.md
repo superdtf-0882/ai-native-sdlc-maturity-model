@@ -1,6 +1,6 @@
 # AI-Native SDLC Maturity Model — Matrix
 
-This is a markdown rendering of `ai_native_sdlc_maturity_model.xlsx`, generated for readability in-browser and for direct use as input to AI tools. **The Excel file is the source of truth** -- if this document and the spreadsheet ever diverge, the spreadsheet is authoritative until this file is regenerated.
+This is the full A–E maturity matrix for all 13 dimensions, readable in-browser and directly usable as input to AI tools. **This markdown document is the source of truth** -- `ai_native_sdlc_maturity_model.xlsx` is a derived distribution rendering of it; if the two ever diverge, this document is authoritative and the spreadsheet should be regenerated.
 
 For the design principles, handoff structure, research finding, and open items behind this matrix, see `README.md`. For the diagram of how these 13 dimensions hand off to each other, see `sdlc_handoff_diagram.png` / `sdlc_handoff_diagram.html`.
 
@@ -302,7 +302,7 @@ Security policy for agent behavior is enforced at the point of action -- least-p
 
 ## D12. Instrumentation & observability
 
-*The capability to monitor, trace, and evaluate system behavior in production, and to structure organizational knowledge (decisions, plans, metrics) for equal consumption by humans and agents, closing the loop back to upstream dimensions.*
+*The capability to monitor, trace, and evaluate system behavior in production, and to structure organizational knowledge (decisions, plans, metrics) for equal consumption by humans and agents, closing the loop back to upstream dimensions. If AI is only used to generate deterministic artifacts (e.g., code, tests, IaC) and is not in the runtime decision path, production observability requirements stay primarily classical; AI-specific tracing/evaluation applies at build time.*
 
 **Level A**
 
@@ -352,4 +352,4 @@ End-to-end cycle time is short enough to be a competitive differentiator, operat
 
 ---
 
-*Status: Straw-man complete. All 13 dimensions A-E, generated from `ai_native_sdlc_maturity_model.xlsx`. See `README.md` for open items, flagged candidate "lumpy" transitions, and known areas expected to evolve.*
+*Status: locked baseline. All 13 dimensions A-E. See `README.md` for open items, flagged candidate "lumpy" transitions, and known areas expected to evolve.*

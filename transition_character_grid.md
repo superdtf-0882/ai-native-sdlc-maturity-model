@@ -4,7 +4,7 @@
 
 This is a working artifact, not a finished assessment. For each of the 13 dimensions, it provides space to characterize the *nature* of the lift required for each level transition (A→B, B→C, C→D, D→E) — not a numeric cost estimate, but a category that indicates what *kind* of organizational effort the transition represents.
 
-See `ai_native_sdlc_maturity_model.md` for the full A-E content this grid characterizes, and `ai_native_sdlc_maturity_model.xlsx` for the source-of-truth spreadsheet.
+See `ai_native_sdlc_maturity_model.md` for the full A-E content this grid characterizes (the source of truth for the matrix; `ai_native_sdlc_maturity_model.xlsx` is its derived spreadsheet rendering).
 
 This grid operationalizes two things from the model's design principles:
 

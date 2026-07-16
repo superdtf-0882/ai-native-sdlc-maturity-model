@@ -1,10 +1,12 @@
 # AI-Native SDLC Maturity Model — working framework
 
-> **STRAWMAN — draft for review.** Shared with select practitioners for feedback. Not yet a finished or validated model. See *Open items* and *Status* below.
-
 ## Purpose
 
 A diagnostic framework for assessing the maturity of a software delivery system that assumes an AI-native baseline — not a framework for transitioning a traditional SDLC onto AI tooling. The goal is a current-state read with enough granularity to identify realistically adjacent next states, not a description of pinnacle practice.
+
+The model's executive anchor is **D13, feedback loop velocity** — the end-to-end cycle time from signal to shipped response. The other twelve dimensions ultimately exist in service of that composite loop: it is the dimension that connects the delivery system to competitiveness, and the measure that distinguishes a *merely* AI-native organization from a *competitively* AI-native one.
+
+A free interactive self-assessment built on this model is available at [aisdlc.davidfacer.com/maturitymodelassessment](https://aisdlc.davidfacer.com/maturitymodelassessment/).
 
 This document captures: (1) the design principles guiding the model, (2) the research finding that motivates it, (3) the 13 capability dimensions and their handoff structure, and (4) open items carried forward as the matrix itself is drafted.
 
@@ -85,10 +87,10 @@ The capability to govern how validated changes move into production — gating, 
 The capability to identify, assess, and mitigate security and regulatory risk introduced at any stage of the lifecycle, including risks novel to AI-generated artifacts and agent tooling. (Previously deferred; unblocked — see *Open items*.)
 
 **D12. Instrumentation & observability**
-The capability to monitor, trace, and evaluate system behavior in production, and to structure organizational knowledge (decisions, plans, metrics) for equal consumption by humans and agents, closing the loop back to upstream dimensions (notably D1).
+The capability to monitor, trace, and evaluate system behavior in production, and to structure organizational knowledge (decisions, plans, metrics) for equal consumption by humans and agents, closing the loop back to upstream dimensions (notably D1). If AI is only used to generate deterministic artifacts (e.g., code, tests, IaC) and is not in the runtime decision path, production observability requirements stay primarily classical; AI-specific tracing/evaluation applies at build time.
 
-**D13. Feedback loop velocity**
-The end-to-end cycle time from signal (market, user, incident, failure) to shipped response, as a property of the whole system rather than any individual stage. Distinguishes a "merely AI-native" organization from a "competitively AI-native" one — an org can score well on D1–D12 individually and still have a slow composite loop if the dimensions don't hand off to each other quickly.
+**D13. Feedback loop velocity — the executive anchor**
+The end-to-end cycle time from signal (market, user, incident, failure) to shipped response, as a property of the whole system rather than any individual stage. Distinguishes a "merely AI-native" organization from a "competitively AI-native" one — an org can score well on D1–D12 individually and still have a slow composite loop if the dimensions don't hand off to each other quickly. D13 is listed last but is not the least: it is the capstone the other twelve feed, and the single dimension an executive can anchor the whole model to — if cycle time can be accurately measured and safely manipulated, an organization can deliver functionality better and faster than the rest of its market. (Elevated per reviewer feedback — see `feedback_log.md`, F-004.)
 
 ## Handoff structure
 
@@ -123,7 +125,7 @@ A diagram of the sequential main line (D1–D3 → fused D4/D5/D7 motion; D6 →
 
 ## Status
 
-Straw-man complete. All 13 dimensions drafted A–E. Ready for review by domain professionals. Known open items above should be flagged to reviewers explicitly rather than presented as settled — per Design Principle 10, revision based on reviewer feedback and continued field evolution is expected, not a sign of an incomplete first pass.
+Locked baseline. All 13 dimensions defined A–E. The open items above are carried forward deliberately, not left unresolved by accident — per Design Principle 10, this model is a living document, and revision driven by reviewer feedback and field evolution is expected. Feedback and its disposition are tracked publicly in `feedback_log.md`.
 
 ---
 
@@ -133,10 +135,11 @@ Straw-man complete. All 13 dimensions drafted A–E. Ready for review by domain 
 - `ai_native_sdlc_maturity_model.md` — markdown version of the matrix only
 - `sdlc_handoff_diagram.png` — visual diagram of the handoff structure described above
 - `sdlc_handoff_diagram.html` — visual diagram of the handoff structure described above
-- `transition_character_grid.xlsx` — working document to capture maturity transion lift characteristics
-- `transition_character_grid.md` — markdown version of working document to capture maturity transion lift characteristics
+- `transition_character_grid.xlsx` — working document to capture maturity transition lift characteristics
+- `transition_character_grid.md` — markdown version of working document to capture maturity transition lift characteristics
+- `feedback_log.md` — public log of feedback received and how each point was resolved
 - `README.md` — Start here
-- `LICENSE` — CC BY 4.0
+- `LICENSE.md` — CC BY 4.0
 
 ---
 
