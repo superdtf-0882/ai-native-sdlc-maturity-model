@@ -4,7 +4,7 @@
 
 This is a working artifact, not a finished assessment. For each of the 13 dimensions, it provides space to characterize the *nature* of the lift required for each level transition (A→B, B→C, C→D, D→E) — not a numeric cost estimate, but a category that indicates what *kind* of organizational effort the transition represents.
 
-See `ai_native_sdlc_maturity_model_MATRIX.md` for the full A-E content this grid characterizes, and `ai_native_sdlc_maturity_model_STRAWMAN.xlsx` for the source-of-truth spreadsheet.
+See `ai_native_sdlc_maturity_model.md` for the full A-E content this grid characterizes, and `ai_native_sdlc_maturity_model.xlsx` for the source-of-truth spreadsheet.
 
 This grid operationalizes two things from the model's design principles:
 
@@ -59,7 +59,7 @@ Once populated, the grid can support:
 
 - **Identifying lumpy transitions empirically** — any cell categorized as Structural/Architectural is a candidate. Comparing against the flagged candidates above (D6 C→D, D11 C→D, D9 D→E) tests whether our reasoning-based flags hold up against domain experience.
 - **The "Stranded / Starved / Harmonized" diagnostic** — given an organization's current 13-dimension profile, transitions categorized as cheap (Behavioral/Cultural or Process/Policy) represent quick wins; transitions categorized as Structural/Architectural represent capital commitments that should be planned and budgeted separately, and are the ones most likely to create or resolve stranded/starved conditions in adjacent dimensions.
-- **A sane pathway** — not a single prescribed sequence, but a way to separate "what can move now, cheaply" from "what requires a planned investment," informed by each organization's actual current profile and how the 13 dimensions hand off to, constrain, and converge with each other (see `ai_native_sdlc_maturity_model_MATRIX.md`).
+- **A sane pathway** — not a single prescribed sequence, but a way to separate "what can move now, cheaply" from "what requires a planned investment," informed by each organization's actual current profile and how the 13 dimensions hand off to, constrain, and converge with each other (see `ai_native_sdlc_maturity_model.md`).
 
 ---
 

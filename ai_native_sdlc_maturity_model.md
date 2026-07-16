@@ -1,8 +1,8 @@
 # AI-Native SDLC Maturity Model — Matrix
 
-This is a markdown rendering of `ai_native_sdlc_maturity_model_STRAWMAN.xlsx`, generated for readability in-browser and for direct use as input to AI tools. **The Excel file is the source of truth** -- if this document and the spreadsheet ever diverge, the spreadsheet is authoritative until this file is regenerated.
+This is a markdown rendering of `ai_native_sdlc_maturity_model.xlsx`, generated for readability in-browser and for direct use as input to AI tools. **The Excel file is the source of truth** -- if this document and the spreadsheet ever diverge, the spreadsheet is authoritative until this file is regenerated.
 
-For the design principles, handoff structure, research finding, and open items behind this matrix, see `ai_native_sdlc_maturity_model.md`. For the diagram of how these 13 dimensions hand off to each other, see `sdlc_handoff_diagram.png` / `sdlc_handoff_diagram.html`.
+For the design principles, handoff structure, research finding, and open items behind this matrix, see `README.md`. For the diagram of how these 13 dimensions hand off to each other, see `sdlc_handoff_diagram.png` / `sdlc_handoff_diagram.html`.
 
 ---
 
@@ -352,4 +352,4 @@ End-to-end cycle time is short enough to be a competitive differentiator, operat
 
 ---
 
-*Status: Straw-man complete. All 13 dimensions A-E, generated from `ai_native_sdlc_maturity_model_STRAWMAN.xlsx`. See the working framework document for open items, flagged candidate "lumpy" transitions, and known areas expected to evolve.*
+*Status: Straw-man complete. All 13 dimensions A-E, generated from `ai_native_sdlc_maturity_model.xlsx`. See `README.md` for open items, flagged candidate "lumpy" transitions, and known areas expected to evolve.*
