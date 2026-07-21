@@ -1,6 +1,6 @@
 # AI-Native SDLC Maturity Model — Matrix
 
-**Version 1.0.0 — locked 2026-07-15.**
+**Version 1.1.0 — 2026-07-21** (adds the Pre-AI threshold state, the Exempt designation, and assessment schema additions; all thirteen dimensions and all A–E level definitions unchanged from v1.0.0, locked 2026-07-15 — see `CHANGELOG.md`).
 
 This is the full A–E maturity matrix for all 13 dimensions, readable in-browser and directly usable as input to AI tools. **This markdown document is the source of truth** -- `ai_native_sdlc_maturity_model.xlsx` is a derived distribution rendering of it; if the two ever diverge, this document is authoritative and the spreadsheet should be regenerated.
 
@@ -13,6 +13,103 @@ For the design principles, handoff structure, research finding, and open items b
 Each dimension below has a definition followed by a five-level maturity ladder (A through E). Levels describe **realistically adjacent states** -- each step up implies a roughly costable set of changes, not "more AI, more thoroughly." A given level is not inherently good or bad; it is appropriate or inappropriate for an organization's size, regulatory context, and risk tolerance (see Design Principle 3 in the working framework document).
 
 Dimensions are independently scored -- an organization can be advanced in one dimension and nascent in another. See the working framework document for how dimensions hand off to, constrain, and converge with each other.
+
+---
+
+### Pre-AI — The Threshold State
+
+**Pre-AI** designates a dimension in which an organization has not
+yet adopted AI-assisted practices of any kind. It is a threshold
+position, not a maturity level: it sits outside the A–E scale and
+carries no letter.
+
+An organization scores Pre-AI on a dimension when the activities of
+that dimension are performed — possibly with great discipline — using
+entirely pre-AI methods and tooling.
+
+**Pre-AI is not an assessment of general SDLC maturity.** A shop with
+rigorous CMMI-style discipline, comprehensive CI/CD automation, and
+mature release engineering — but no AI tooling — scores Pre-AI on the
+relevant dimensions exactly as a shop with none of that discipline
+does. This is deliberate: the model measures AI-native maturity, and
+general SDLC excellence is already well measured by existing
+frameworks. What existing discipline determines is not the starting
+*level* but the transition *velocity* — see below.
+
+**Using Pre-AI as an on-ramp.** Organizations at the beginning of an
+AI transformation can adopt this model directly from the threshold:
+Pre-AI names the starting position honestly, and Level A becomes the
+first milestone of adoption for any dimension, not a judgment of
+failure. Dimensional focus applies from the first step — an
+organization moves one or two dimensions from Pre-AI to A deliberately,
+rather than attempting broad simultaneous adoption.
+
+**Transition velocity.** Existing engineering discipline is
+transferable substrate. An organization with mature automation,
+strong requirements traceability, or rigorous release gates will
+typically cross levels faster than an organization without them —
+the discipline transfers; the tooling changes. Assessments of Pre-AI
+dimensions may optionally carry a **readiness note** recording the
+non-AI maturity that predicts transition speed. The readiness note
+is narrative, not a score.
+
+---
+
+### Exempt — The Governed Stance
+
+**Exempt** designates a dimension that an organization has
+deliberately excluded from AI adoption as a matter of governed
+policy. It is a stance, not a state: where Pre-AI describes a
+position an organization intends to move from, Exempt records a
+decision an organization has made and stands behind.
+
+**An Exempt designation is valid only when it cites a governing
+constraint.** Acceptable constraint sources:
+
+- **Regulatory** — a law, regulation, or supervisory requirement
+  that prohibits or materially restricts AI use in the dimension's
+  activities
+- **Contractual** — a client, partner, or certification obligation
+  with the same effect
+- **Corporate policy** — a documented, owned internal policy decision
+  (with named authority and review date), where the organization has
+  weighed AI adoption and formally declined it for this dimension
+
+An exemption without a citable constraint is not Exempt — it is
+Pre-AI. The citation requirement is what distinguishes a governed
+architectural decision from an unexamined default. Organizations
+practicing formal enterprise architecture will recognize this as
+constraint governance: the exemption is an architecture decision,
+recorded with its rationale, owner, and review trigger.
+
+**Exempt dimensions and overall maturity.** An Exempt dimension is
+excluded from aggregate maturity calculations rather than scored as
+a floor value. An organization with eleven dimensions at C and two
+legitimately Exempt is a mature AI-native organization with a
+governed boundary — not a shop dragged down by two failing scores.
+Assessment renderings must, however, always show Exempt dimensions
+visibly: an exemption is part of the organization's architecture,
+not an omission from it.
+
+**Exemptions are reviewable.** Every Exempt designation carries a
+review trigger — at minimum, re-validation when the cited constraint
+changes (regulation amended, contract renewed, policy revisited).
+A lapsed constraint converts the dimension to Pre-AI at the next
+assessment.
+
+---
+
+### Assessment values
+
+**Legal score values per dimension:** `Pre-AI` · `A` · `B` · `C` ·
+`D` · `E` · `Exempt(constraint-ref)`
+
+- `Exempt` is invalid without a constraint reference. The reference
+  points to the organization's own constraint record (in an EA OKF
+  practice: a `constraint_or_principle` corpus ID; elsewhere: a named
+  policy/regulation citation).
+- Pre-AI dimensions may carry an optional `readiness_note` (narrative).
+- Exempt dimensions carry a `review_trigger` (date or event).
 
 ---
 

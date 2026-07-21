@@ -1,6 +1,6 @@
 # AI-Native SDLC Maturity Model — working framework
 
-**Version 1.0.0 — locked 2026-07-15.** Changes from this baseline are tracked in `CHANGELOG.md` and diff against the `v1.0.0` tag.
+**Version 1.1.0 — 2026-07-21.** Adds the Pre-AI threshold state, the Exempt designation, and assessment schema additions; all thirteen dimensions and all A–E level definitions are unchanged from the v1.0.0 baseline (locked 2026-07-15). Changes are tracked in `CHANGELOG.md` and diff against the `v1.0.0` tag.
 
 ## Purpose
 
@@ -20,7 +20,7 @@ Organizations approaching AI and software delivery generally fall into three pat
 2. **Native AI-native** — already operating with AI-native assumptions, seeking to baseline and plan further.
 3. **Transitioning/AI-enabling** — a traditional SDLC adopting AI tooling incrementally.
 
-This model targets flavors 1 and 2, which are treated as essentially the same target state (differing mainly in starting friction, not destination). Flavor 3 is explicitly out of scope. It is already well-served by a large and active body of consulting and vendor material (the Harness Model, ELEKS' AI-SDLC model, Grid Dynamics' 8-dimension assessment, the CMU SEI/Accenture AI Adoption Maturity Model, and others), and the transition dynamics from a pre-AI SDLC are sufficiently different — and sufficiently uncertain — to warrant a separate treatment entirely. Whether flavor 3 organizations can reach flavor 1/2 states, and at what cost, remains an open empirical question that this model does not attempt to answer.
+This model targets flavors 1 and 2, which are treated as essentially the same target state (differing mainly in starting friction, not destination). As of v1.1, flavor 3 has a named position rather than a place in scope: **Pre-AI**, the threshold state — the starting position named honestly, where existing engineering discipline predicts transition *velocity* rather than starting *level*, and Level A is the first milestone of adoption, not a judgment of failure (see the Pre-AI section of the matrix). The model still does not attempt to be flavor 3's transition playbook: flavor 3 is explicitly out of scope. It is already well-served by a large and active body of consulting and vendor material (the Harness Model, ELEKS' AI-SDLC model, Grid Dynamics' 8-dimension assessment, the CMU SEI/Accenture AI Adoption Maturity Model, and others), and the transition dynamics from a pre-AI SDLC are sufficiently different — and sufficiently uncertain — to warrant a separate treatment entirely. Whether flavor 3 organizations can reach flavor 1/2 states, and at what cost, remains an open empirical question that this model does not attempt to answer.
 
 The competitive framing motivating this scope: for organizations whose product is an AI capability (per Bessemer's definition — remove the AI and the product ceases to exist), AI-native delivery capability is not optional, it is definitional. For organizations where AI is one capability within a broader workflow, the gap matters but other moats (proprietary data, workflow embeddedness, switching costs) may offset it longer. Either way, the 13 dimensions below describe the capability profile of a flavor 1/2 organization — assessed independently, not against a flavor 3 starting line.
 

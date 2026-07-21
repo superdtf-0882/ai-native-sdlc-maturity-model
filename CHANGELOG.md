@@ -2,6 +2,29 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+## v1.1.0 — 2026-07-21
+
+Added:
+- Pre-AI threshold state (outside the A–E scale): honest on-ramp
+  position for organizations beginning AI adoption; transition
+  velocity note distinguishing existing discipline (predicts speed)
+  from starting level.
+- Exempt designation (governed stance, per dimension): deliberate,
+  constraint-cited exclusion of a dimension from AI adoption.
+  Requires citable regulatory, contractual, or corporate-policy
+  constraint; excluded from aggregates; always rendered; reviewable.
+- Assessment schema: Pre-AI and Exempt(constraint-ref) as legal
+  values; readiness_note and review_trigger fields.
+
+Unchanged: all thirteen dimensions; all A–E level definitions;
+all prior assessments remain valid.
+
+Acknowledgments: the Exempt mechanism was driven by practitioner
+feedback from a regulated contact-center context — the observation
+that some dimensions can be necessarily AI-free by regulatory or
+corporate requirement, and that a credible model must govern that
+case rather than penalize it.
+
 ## v1.0.0 — 2026-07-15
 
 First locked baseline. The 13 capability dimensions and their A–E maturity ladders are locked as drafted — content unchanged from the reviewed strawman. Changes in this release are currency and packaging, not model content:
