@@ -1,8 +1,8 @@
 # AI-Native SDLC Maturity Model — Matrix
 
-**Version 1.1.0 — 2026-07-21** (adds the Pre-AI threshold state, the Exempt designation, and assessment schema additions; all thirteen dimensions and all A–E level definitions unchanged from v1.0.0, locked 2026-07-15 — see `CHANGELOG.md`).
+**Version 1.2.0 — 2026-07-23** (D1–D3 extracted to `shared_intelligence_layer.md`, the new canonical, shared-with-PDLC source for those three dimensions; this matrix inherits them by reference. D4–D13 and the Pre-AI/Exempt mechanics are unchanged from v1.1.0 — see `CHANGELOG.md`).
 
-This is the full A–E maturity matrix for all 13 dimensions, readable in-browser and directly usable as input to AI tools. **This markdown document is the source of truth** -- `ai_native_sdlc_maturity_model.xlsx` is a derived distribution rendering of it; if the two ever diverge, this document is authoritative and the spreadsheet should be regenerated.
+This is the full A–E maturity matrix for all 13 dimensions (D1–D3 by reference, D4–D13 in full below), readable in-browser and directly usable as input to AI tools. **This markdown document is the source of truth for D4–D13** -- `ai_native_sdlc_maturity_model.xlsx` is a derived distribution rendering of it; if the two ever diverge, this document is authoritative and the spreadsheet should be regenerated. D1–D3 are sourced from `shared_intelligence_layer.md`, not this file.
 
 For the design principles, handoff structure, research finding, and open items behind this matrix, see `README.md`. For the diagram of how these 13 dimensions hand off to each other, see `sdlc_handoff_diagram.png` / `sdlc_handoff_diagram.html`.
 
@@ -113,81 +113,11 @@ assessment.
 
 ---
 
-## D1. Market discovery & definition
+## D1–D3. Shared Intelligence Layer
 
-*The capability to identify, size, and validate market opportunities (TAM/SAM/SOM, market trends, opportunity framing) through a continuous, AI-assisted discovery loop that directly feeds requirements work.*
+D1 (Market discovery & definition), D2 (Buyer/user persona development), and D3 (Positioning & competitive intelligence) are inherited by reference from `shared_intelligence_layer.md` (`STD-SHARED-INTELLIGENCE` v1.0.0), this repo's own canonical source for these three dimensions, shared with the AI-Native PDLC Maturity Model. This matrix no longer maintains its own copy of D1–D3 — see that document for full definitions, transitions, and the Level E convergence rule.
 
-**Level A**
-
-Discovery happens periodically (e.g., at planning cycles), manually synthesized, with AI used inconsistently -- left to individual researcher preference, with no shared method.
-
-**Level B**
-
-Discovery runs on a defined cadence (e.g., quarterly) using a consistent AI-assisted method, but remains a Product-owned exercise -- outputs (TAM/SAM/SOM, trend analysis, opportunity framing) are produced for Product's own use and not routinely shared with Marketing, Sales, or Strategy.
-
-**Level C**
-
-Discovery becomes continuous rather than cadence-based -- market signals and opportunity models refresh on an ongoing basis. Outputs remain primarily Product-owned, though other functions can request access to current findings.
-
-**Level D**
-
-The continuous discovery model (per Level C) is a shared asset -- Marketing, Sales Enablement, and Strategy draw directly from the same underlying market/opportunity model rather than commissioning separate research, though each function still produces its own renderings manually.
-
-**Level E**
-
-Discovery (D1), persona (D2), and positioning/competitive intelligence (D3) operate as one converged intelligence layer that automatically generates function-specific renderings -- Product roadmap input, Marketing messaging, Sales battlecards, and Strategy narratives are all produced from the same continuously-updated model, each contextually adapted to its audience without separate commissioning. From D1's vantage: market signals, TAM/opportunity models, and trend data are the input lens this layer continuously refreshes.
-
----
-
-## D2. Buyer/user persona development
-
-*The capability to research, model, and maintain live representations of target users and buyers, extensible as a shared asset across Product, Marketing, and Sales Enablement.*
-
-**Level A**
-
-User personas exist as static documents, created once (e.g., at launch or major redesign) and rarely revisited. Buyer personas are often an artifact of Marketing or Sales rather than Product Management. AI assistance, where used, is inconsistent -- left to individual preference, with no shared method.
-
-**Level B**
-
-User Personas are dynamic documents that are updated intervalically via Product Management and softare usage data (via instrumentation or other usage reporting). AI assistance is ad hoc or based on departmental software.
-
-**Level C**
-
-User Personas and Buyer Personas are shared in the same system or system to system. They share relevant update data at regular intervals. The system uses a common AI with shared intelligence. Access is extended to relevant organizations including MKTG, Sales, Product, and Engineering.
-
-**Level D**
-
-Personas are dynamic, regularly updated artifacts fed by usage/feedback data, and are shared assets consumed directly by Marketing and Sales Enablement, not just Product. Engineering has connected access to relevant User Personas via regular requirements management system.
-
-**Level E**
-
-Discovery (D1), persona (D2), and positioning/competitive intelligence (D3) operate as one converged intelligence layer that automatically generates function-specific renderings -- Product roadmap input, Marketing messaging, Sales battlecards, and Strategy narratives are all produced from the same continuously-updated model, each contextually adapted to its audience without separate commissioning. From D2's vantage: live representations of target users and buyers are the input lens this layer continuously refreshes, extending to Engineering via the requirements management system (D4).
-
----
-
-## D3. Positioning & competitive intelligence
-
-*The capability to define product differentiation and maintain that positioning against a continuously monitored competitive landscape that actively informs roadmap decisions.*
-
-**Level A**
-
-Positioning was defined at a point in time (e.g., launch) and competitive awareness is ad hoc or anecdotal. AI assistance, where used, is inconsistent -- left to individual preference, with no shared method.
-
-**Level B**
-
-Competitive monitoring runs on a defined cadence using a consistent AI-assisted method (e.g., scheduled competitor and market scans), but remains a Product or Strategy-owned exercise -- findings inform internal roadmap discussions and are not routinely packaged for Marketing or Sales.
-
-**Level C**
-
-Competitive monitoring becomes continuous -- a live feed of market and messaging shifts updates on an ongoing basis. Findings remain primarily owned by Product/Strategy, though other functions can request access to current intelligence.
-
-**Level D**
-
-The continuous competitive intelligence feed (per Level C) is a shared asset -- Marketing and Sales Enablement draw directly from the same underlying competitive model (e.g., for messaging differentiation and battlecards) rather than commissioning separate competitive research, though each function still produces its own renderings manually.
-
-**Level E**
-
-Discovery (D1), persona (D2), and positioning/competitive intelligence (D3) operate as one converged intelligence layer that automatically generates function-specific renderings -- Product roadmap input, Marketing messaging, Sales battlecards, and Strategy narratives are all produced from the same continuously-updated model, each contextually adapted to its audience without separate commissioning. From D3's vantage: positioning and a live competitive landscape are the input lens this layer continuously refreshes.
+Ratified 2026-07-23 following a reconciliation between this matrix's own predecessor D1–D3 text (preserved verbatim, not current authority, at `d1-d3-superseded-v1.1.0.md`) and the Shared Intelligence Layer candidate. Fourteen of fifteen maturity cells carried forward unchanged or with clarification only; one real maturity-state revision landed at D2-B (see `shared_intelligence_layer.md`'s own reconciliation record for the full disposition).
 
 ---
 
@@ -451,4 +381,4 @@ End-to-end cycle time is short enough to be a competitive differentiator, operat
 
 ---
 
-*Status: locked baseline. All 13 dimensions A-E. See `README.md` for open items, flagged candidate "lumpy" transitions, and known areas expected to evolve.*
+*Status: D4-D13 locked baseline, all A-E. D1-D3 inherited by reference from `shared_intelligence_layer.md` (STD-SHARED-INTELLIGENCE v1.0.0) as of 2026-07-23 -- see that document's own status. See `README.md` for open items, flagged candidate "lumpy" transitions, and known areas expected to evolve.*

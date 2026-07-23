@@ -2,6 +2,51 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+## v1.2.0 — 2026-07-23
+
+D1–D3 reconciled and extracted to a new canonical source shared with
+the AI-Native PDLC Maturity Model. Ratified by David Facer ("I ratify
+the D1–D3 reconciliation — David, 7/23/26").
+
+Changed:
+- D1 (Market discovery & definition), D2 (Buyer/user persona
+  development), and D3 (Positioning & competitive intelligence) are
+  removed from this file's own text and inherited by reference from
+  the new `shared_intelligence_layer.md` (`STD-SHARED-INTELLIGENCE`
+  v1.0.0). This matrix no longer maintains its own copy of D1–D3.
+- One real maturity-state revision, confirmed by a fifteen-cell,
+  five-axis reconciliation against the predecessor text: D2-B moves
+  from "AI assistance is ad hoc" to "a consistent AI-assisted
+  research and synthesis method," for coherence with D1-B and D3-B,
+  which already used identical cadence/method language at that
+  letter. The other fourteen cells carried forward unchanged or with
+  wording clarification only — no other maturity-state shift.
+
+Added:
+- `shared_intelligence_layer.md` — the new canonical D1–D3 source,
+  full reconciliation record, and the canonical-source rule governing
+  it (sole source of truth; SDLC and PDLC inherit by reference;
+  derived distributions may embed rendered copies but are not
+  independently editable; changes propagate atomically).
+- `d1-d3-superseded-v1.1.0.md` — the predecessor D1–D3 text, preserved
+  verbatim as it read through the locked `v1.1.0` release, kept as
+  regression control and historical evidence, not current authority.
+
+Unchanged: D4–D13 and all A–E level definitions for those dimensions;
+the Pre-AI/Exempt mechanics; all prior assessments against D4–D13
+remain valid. Assessments scored against the old D1–D3 text should be
+read through this changelog, the same way v1↔v2 stratum letter
+changes are read through their own translation table elsewhere in this
+practice's governance.
+
+Provenance, stated precisely: the reconciliation methodology and
+framing came from a conversation between David Facer and Craig (an
+ontologist). The fifteen-cell analysis and disposition record is
+David Facer's own direct work, not delegated. Full record:
+`shared_intelligence_layer.md`'s own Reconciliation Record section,
+and the governing corpus at
+`briefs/2026-07-23-d1-d3-reconciliation/` (`OKF TOGAF` repo).
+
 ## v1.1.0 — 2026-07-21
 
 Added:

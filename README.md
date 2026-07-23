@@ -1,6 +1,6 @@
 # AI-Native SDLC Maturity Model — working framework
 
-**Version 1.1.0 — 2026-07-21.** Adds the Pre-AI threshold state, the Exempt designation, and assessment schema additions; all thirteen dimensions and all A–E level definitions are unchanged from the v1.0.0 baseline (locked 2026-07-15). Changes are tracked in `CHANGELOG.md` and diff against the `v1.0.0` tag.
+**Version 1.2.0 — 2026-07-23.** D1–D3 reconciled against a Shared Intelligence Layer candidate and extracted to `shared_intelligence_layer.md`, the new canonical source for those three dimensions shared with the AI-Native PDLC Maturity Model; this repo's matrix now inherits them by reference (predecessor text preserved verbatim at `d1-d3-superseded-v1.1.0.md`). D4–D13 and the Pre-AI/Exempt mechanics from v1.1.0 (2026-07-21) are unchanged. Changes are tracked in `CHANGELOG.md` and diff against the `v1.0.0` tag.
 
 ## Purpose
 
@@ -133,8 +133,10 @@ Locked baseline. All 13 dimensions defined A–E. The open items above are carri
 
 ## Files in this repo
 
-- `ai_native_sdlc_maturity_model.xlsx` — the full A–E maturity matrix for all 13 dimensions
-- `ai_native_sdlc_maturity_model.md` — markdown version of the matrix only
+- `ai_native_sdlc_maturity_model.xlsx` — the full A–E maturity matrix for all 13 dimensions (D1–D3 pending regeneration — see `shared_intelligence_layer.md`)
+- `ai_native_sdlc_maturity_model.md` — markdown version of the matrix for D4–D13; D1–D3 inherited by reference (2026-07-23)
+- `shared_intelligence_layer.md` — canonical D1–D3 source (`STD-SHARED-INTELLIGENCE` v1.0.0), shared with the AI-Native PDLC Maturity Model
+- `d1-d3-superseded-v1.1.0.md` — predecessor D1–D3 text, preserved verbatim as historical evidence, not current authority
 - `sdlc_handoff_diagram.png` — visual diagram of the handoff structure described above
 - `sdlc_handoff_diagram.html` — visual diagram of the handoff structure described above
 - `transition_character_grid.xlsx` — working document to capture maturity transition lift characteristics
