@@ -1,0 +1,143 @@
+# Short-form compression for the Whole-Model View (aimaturitymodels.com)
+#
+# One terse, one-sentence string per dimension/level, keyed "D<N>.<Level>".
+# Source of truth for this file's content: the reconciled compression at
+# briefs/2026-07-23-d1-d3-reconciliation/02-shortform-compression-v4-post-reconciliation.md
+# in the OKF TOGAF repo (private governance corpus) -- that document is
+# where changes to this content are reasoned about and reviewed; this file
+# is the machine-readable rendering the site's build process fetches.
+#
+# `flag`, where present, names an open review item from this model's own
+# "Review flags before lock" list. It is not a maturity judgment -- it
+# means the cell's content is accurate as drafted but the underlying
+# question is still open. Render it visibly, don't drop it silently.
+#
+# Full definitions, transitions, and reasoning live in
+# ai_native_sdlc_maturity_model.md (D4-D13) and shared_intelligence_layer.md
+# (D1-D3, STD-SHARED-INTELLIGENCE v1.0.0) -- this file is a compression of
+# those, not a replacement for them.
+
+version: "1.0.0"
+source_matrix_version: "1.2.0"
+generated: "2026-07-23"
+
+dimensions:
+  D1:
+    title: "Market discovery & definition"
+    levels:
+      A: "AI use is ad hoc, no shared method."
+      B: "A consistent AI method exists, one function's own."
+      C: "AI-driven discovery runs continuously, still siloed."
+      D: "Functions draw on one AI model directly, each still hand-rendering it."
+      E: "AI auto-renders each function's view from one shared model."
+
+  D2:
+    title: "Buyer/user persona development"
+    levels:
+      A: "AI use is ad hoc, individual preference."
+      B: "Consistent AI-assisted research/synthesis method; other functions get periodic document renderings, not live access."
+      C: "AI keeps personas live against real usage signal, shared system."
+      D: "Functions consume the AI-maintained system directly, still hand-adapting."
+      E: "AI auto-generates each function's persona view from one model."
+
+  D3:
+    title: "Positioning & competitive intelligence"
+    levels:
+      A: "AI use is ad hoc, no shared method."
+      B: "Consistent AI monitoring, one function's own cadence."
+      C: "AI monitoring is continuous, not periodic."
+      D: "Functions draw on one AI model directly, still hand-rendering."
+      E: "AI auto-generates each function's positioning view from one model."
+
+  D4:
+    title: "Requirements management"
+    levels:
+      A: "No AI role — informal tickets, no structure."
+      B: "No AI role — shared record, purely human traceability."
+      C: "No AI role — shared human access to specs and personas."
+      D: "AI generates code/prototypes/tests directly from spec."
+      E: "AI generates in both directions — spec↔artifact."
+
+  D5:
+    title: "Prototyping"
+    levels:
+      A: "No AI governance role; boundary undefined."
+      B: "AI-assisted prototyping; human decides case by case."
+      C: "Human makes a documented call, after the fact."
+      D: "Same human criteria, applied while building."
+      E: "Spec/prototype/test built together; human's call is near-free either way."
+
+  D6:
+    title: "Architecture governance"
+    flag: "C→D transition steepness under review — candidate 'lumpy' transition, see this model's own Open Items"
+    levels:
+      A: "Tribal knowledge; no AI involved."
+      B: "Humans write, humans manually enforce against docs."
+      C: "Deterministic tooling — not AI judgment — catches common violations."
+      D: "Agents apply the rules during generation, not just after."
+      E: "Agents propose rule changes; a human architect still approves."
+
+  D7:
+    title: "Test-driven development"
+    levels:
+      A: "Humans write tests after the fact."
+      B: "Tests written first; translation from spec may be human or agent."
+      C: "AI derives tests directly from spec, repeatably."
+      D: "AI generates tests as the spec is written, flags ambiguity live."
+      E: "Spec/test/prototype generation fused, scales with volume."
+
+  D8:
+    title: "Code verification & review"
+    levels:
+      A: "Only human review; no automation."
+      B: "Non-AI gates run first; humans still review everything."
+      C: "Humans triage by risk; low-risk clears on automation alone."
+      D: "An independent AI reviewer does first pass; humans see only its flags."
+      E: "The AI reviewer's own accuracy is continuously checked against outcomes."
+
+  D9:
+    title: "Environment management"
+    flag: "Level E's 'no standing human maintenance' bar under review — may already be understated relative to emerging practice, see this model's own Open Items"
+    levels:
+      A: "No separation; fully manual."
+      B: "Environments exist, manually provisioned."
+      C: "Defined as code; a human still triggers provisioning."
+      D: "A human action triggers on-demand provisioning from templates."
+      E: "Agents self-provision and tear down, within human policy."
+
+  D10:
+    title: "Release discipline"
+    levels:
+      A: "Fully human-gated, fixed cadence."
+      B: "Automated gates; approval and comms still manual."
+      C: "Deploys trigger on passing gates; rollback automatic but exceptional."
+      D: "Approval, compliance, rollback fully automated under human-set policy."
+      E: "Live signals from the running system govern rollout or rollback."
+
+  D11:
+    title: "Security & compliance"
+    flag: "Whole dimension carries deferred/research status in the locked baseline — not yet research-complete, see this model's own README"
+    levels:
+      A: "Full unrestricted access; no containment."
+      B: "Sandboxed, but shared human credentials."
+      C: "Attributable per-agent identity; still individually bypassable."
+      D: "Gates mandatory, not bypassable; agent tooling inventoried as risk."
+      E: "Policy enforced live, during execution — agent can be halted mid-action."
+
+  D12:
+    title: "Instrumentation & observability"
+    levels:
+      A: "Infra-only monitoring; no AI structuring."
+      B: "AI traces exist, but ad hoc, unretained."
+      C: "AI traces retained systematically, diagnose failure patterns."
+      D: "AI's role in runtime decisions is separately identified and traced."
+      E: "Build, runtime, and production telemetry equally visible to agents and humans."
+
+  D13:
+    title: "Feedback loop velocity"
+    levels:
+      A: "No AI role — cycle time unmeasured."
+      B: "No AI role — measured retrospectively by humans only."
+      C: "Tracked continuously; humans name the bottleneck."
+      D: "Bottleneck fix is funded like ordinary feature work."
+      E: "AI evidence (D12) + continuous fixing compress the loop to days, not months."
