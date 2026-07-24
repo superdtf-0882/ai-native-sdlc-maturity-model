@@ -2,7 +2,7 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
-## Unreleased — 2026-07-23
+## Unreleased — 2026-07-23/24
 
 Added `short_form.yml`, a one-sentence-per-cell compression of all 13
 dimensions derived from this matrix and `shared_intelligence_layer.md`,
@@ -12,6 +12,11 @@ any dimension's maturity content, same category as
 `ai_native_sdlc_maturity_model.xlsx`. Carries visible flags for the
 three dimensions with open review items (D6, D9-E, D11) rather than
 presenting them as settled.
+
+Added `deep_dives/` (2026-07-24), narrative Per-Dimension Deep-Dive
+content for aimaturitymodels.com, one file per dimension. Same
+no-version-bump reasoning — derived content, not new maturity data.
+Same three dimensions (D6, D9, D11) carry a visible under-review note.
 
 ## v1.2.0 — 2026-07-23
 
