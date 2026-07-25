@@ -21,9 +21,20 @@
 # ai_native_sdlc_maturity_model.md (D4-D13) and shared_intelligence_layer.md
 # (D1-D3, STD-SHARED-INTELLIGENCE v1.0.0) -- this file is a compression of
 # those, not a replacement for them.
+#
+# PROVENANCE (briefs/2026-07-25-compression-provenance/): this compression
+# was verified against both source files at commit 4730189 (tag v1.2.0).
+# Both files live in this same repo and were both last touched in that
+# commit -- one citation covers both, no cross-repo dependency exists yet.
+# `source_matrix_version` below is the checkable claim: run
+# `git diff v1.2.0 HEAD -- ai_native_sdlc_maturity_model.md
+# shared_intelligence_layer.md` from this repo's root -- an empty diff
+# means this compression is still current; any output means it's stale
+# and needs re-verification before being trusted.
 
 version: "1.1.0"
 source_matrix_version: "1.2.0"
+source_matrix_commit: "4730189dbcb975d3c200d0e6d9f57ae4f39eb1a1"
 generated: "2026-07-24"
 
 dimensions:
