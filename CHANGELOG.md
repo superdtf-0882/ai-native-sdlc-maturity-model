@@ -18,6 +18,20 @@ content for aimaturitymodels.com, one file per dimension. Same
 no-version-bump reasoning — derived content, not new maturity data.
 Same three dimensions (D6, D9, D11) carry a visible under-review note.
 
+`short_form.yml` finalized (2026-07-24, later same day) — all 65
+cells rewritten to a uniform 7-9 words each (verified
+programmatically), AI/agent role stated in every cell. `version`
+bumped 1.0.0 → 1.1.0 (wording refinement of the compression itself,
+not a change to `source_matrix_version`, which stays 1.2.0 — this
+file's own content, not the underlying matrix). D6 and D9-E's open
+review items **resolved** by David directly the same day — see this
+file's own entries above and the README's Open Items section for the
+quotes. D6's and D9's flags removed from `short_form.yml`
+accordingly; D11's flag remains, unresolved. Family-wide A-E axis
+vocabulary locked as a separate, related decision (Nascent / Modeled
+/ Continuous / Integral / Telemetric) — applied on aimaturitymodels.com
+as column headers, not part of this file's own content.
+
 ## v1.2.0 — 2026-07-23
 
 D1–D3 reconciled and extracted to a new canonical source shared with
