@@ -139,6 +139,7 @@ Locked baseline. All 13 dimensions defined A–E. The open items above are carri
 - `ai_native_sdlc_maturity_model.md` — markdown version of the matrix for D4–D13; D1–D3 inherited by reference (2026-07-23)
 - `shared_intelligence_layer.md` — canonical D1–D3 source (`STD-SHARED-INTELLIGENCE` v1.0.0), shared with the AI-Native PDLC Maturity Model
 - `short_form.yml` — one-sentence-per-cell compression of all 13 dimensions, derived from this matrix and `shared_intelligence_layer.md`, for consumption by external sites (e.g. aimaturitymodels.com's Whole-Model View); not a source of truth, regenerate if it diverges
+- `sdlc_transition_states_d4_d13.md` — canonical A→B/B→C/C→D/D→E transition notes and Level E sustainment notes for D4–D13 (v0.2, 2026-07-26), each transition carrying a testable verification clause; D1–D3 transitions live in `shared_intelligence_layer.md` instead. Reviewed against this matrix at `v1.2.0` (see the file's own PROVENANCE note). Consumed by aimaturitymodels.com's Whole-Model View reveal panel.
 - `deep_dives/` — narrative-style Per-Dimension Deep-Dive content (one file per dimension), for aimaturitymodels.com's Deep-Dive pages; derived from this matrix and `shared_intelligence_layer.md`, not independently versioned
 - `d1-d3-superseded-v1.1.0.md` — predecessor D1–D3 text, preserved verbatim as historical evidence, not current authority
 - `sdlc_handoff_diagram.png` — visual diagram of the handoff structure described above

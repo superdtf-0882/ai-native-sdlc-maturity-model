@@ -2,6 +2,20 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+Added `sdlc_transition_states_d4_d13.md` (2026-07-26), the canonical
+A→B/B→C/C→D/D→E transition notes and Level E sustainment notes for
+D4–D13, each transition carrying a testable verification clause
+(D1–D3's equivalent content lives in `shared_intelligence_layer.md`).
+No version bump — same category as `short_form.yml` and `deep_dives/`:
+derived content reviewed against this matrix at `v1.2.0`, not a change
+to any dimension's maturity content. v0.1 was reviewed by Deputy
+TOGAF against the locked matrix dimension-by-dimension; four sections
+were revised into v0.2 (D4 C→D, D5 A→B, D5 C→D, D6 C→D) before
+landing — see the file's own PROVENANCE note and
+`briefs/2026-07-26-transition-states-canonize/` in the governance
+corpus for the full review. D11 carries a draft-caution note inheriting
+this dimension's provisional research status.
+
 ## Unreleased — 2026-07-23/24
 
 Added `short_form.yml`, a one-sentence-per-cell compression of all 13
