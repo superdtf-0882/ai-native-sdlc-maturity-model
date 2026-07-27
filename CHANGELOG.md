@@ -2,6 +2,16 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+D2's name corrected (2026-07-27), `shared_intelligence_layer.md`:
+"Buyer/user persona development" → "Buyer & user persona development"
+-- wording only, no change to the dimension's actual scope or maturity
+content. David's own rename, requested at aimaturitymodels.com's
+Whole-Model View column-width fine-tune (short_form.yml's digest title
+already carried this wording -- this brings the canonical header back
+in sync with it, rather than leaving the two disagree). Since D1-D3
+are shared with the AI-Native PDLC Maturity Model, this rename applies
+there too the next time PDLC's own content is built from this file.
+
 Added `sdlc_transition_states_d4_d13.md` (2026-07-26), the canonical
 A→B/B→C/C→D/D→E transition notes and Level E sustainment notes for
 D4–D13, each transition carrying a testable verification clause

@@ -68,7 +68,7 @@ Verify that automatic renderings accurately reflect the shared intelligence and 
 
 ---
 
-## D2. Buyer/user persona development
+## D2. Buyer & user persona development
 
 *The capability to research, model, and maintain live representations of target users and buyers as a shared intelligence asset across Product, Marketing, Sales Enablement, and Engineering.*
 
