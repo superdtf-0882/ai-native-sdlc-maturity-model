@@ -48,7 +48,7 @@ dimensions:
       E: "AI auto-renders each function's view from one model."
 
   D2:
-    title: "Buyer/user persona development"
+    title: "Buyer & user persona development"
     levels:
       A: "Ad hoc AI use, individual preference only, inconsistent."
       B: "Consistent AI synthesis exists, but personas ship static."
