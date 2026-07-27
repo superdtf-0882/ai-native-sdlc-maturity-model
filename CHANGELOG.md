@@ -2,6 +2,23 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+`deep_dives/` updated for consistency with the matrix consolidation above
+(2026-07-27). No version bump -- same derived-content treatment as
+always. Two changes:
+- Maturity-level names (Nascent / Modeled → Integral / Telemetric)
+  added to each dimension's section headers, matching the vocabulary
+  now used throughout `ai_native_sdlc_maturity_model.md` and
+  aimaturitymodels.com.
+- A real drift bug caught and fixed: `d6.md` and `d9.md` still
+  presented their C→D "lumpy transition" and Level E ceiling questions
+  as open, unresolved flags -- but `README.md`'s own Open Items section
+  already recorded both as **resolved 2026-07-24**, with David's direct
+  quotes. Both files' inline cautions and footers rewritten to reflect
+  the resolution rather than the stale open-flag framing. `d11.md`'s
+  flag is unchanged -- it's genuinely still open. Footer wording across
+  the other D4-D13 files ("locked and draft content") updated too, since
+  the transition/verification content is canonical now, not draft.
+
 D4–D13 transition/verification notes and maturity-level names folded into
 `ai_native_sdlc_maturity_model.md` (2026-07-27). Two gaps, both requested
 directly: the public canonical matrix on GitHub still read as bare A–E
