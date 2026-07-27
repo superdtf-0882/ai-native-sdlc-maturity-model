@@ -38,7 +38,7 @@ A useful framing question when working through this grid: *"When you look at the
 | Dimension | A→B | B→C | C→D | D→E | Notes |
 |---|---|---|---|---|---|
 | **D1.** Market discovery & definition | | | | | |
-| **D2.** Buyer/user persona development | | | | | |
+| **D2.** Buyer & user persona development | | | | | |
 | **D3.** Positioning & competitive intelligence | | | | | |
 | **D4.** Requirements management (specification quality & traceability) | | | | | |
 | **D5.** Prototyping & the prototype-to-code boundary | | | | | |

@@ -2,6 +2,34 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+D4–D13 transition/verification notes and maturity-level names folded into
+`ai_native_sdlc_maturity_model.md` (2026-07-27). Two gaps, both requested
+directly: the public canonical matrix on GitHub still read as bare A–E
+level definitions with no transition guidance visible in the document
+itself (the transition/verification content existed only in the separate
+`sdlc_transition_states_d4_d13.md` companion, landed 2026-07-26), and it
+never carried the family-wide maturity-level names (Nascent / Modeled /
+Continuous / Integral / Telemetric) already locked and live on
+aimaturitymodels.com. No version bump -- same category as the D2 header
+rename above: consolidation and presentation only, not a change to any
+dimension's maturity content. Specifically:
+- Each of D4–D13's five levels now shows its own inline transition to
+  the next level (A→B, B→C, C→D, D→E) with a verification clause, and
+  Level E shows a sustainment note instead of a further transition --
+  verbatim from `sdlc_transition_states_d4_d13.md` v0.2, restructured
+  to interleave with the level text rather than living in a separate
+  file (the same interleaved shape `shared_intelligence_layer.md`
+  already uses for D1–D3). The Cross-dimension boundary checks section
+  from that same file is folded in too, as its own section near the end.
+- A legend maps A–E to their family-wide names near the top of the
+  document, and each `**Level X**` heading throughout D4–D13 now reads
+  `**Level X — Name**` (e.g. "Level A — Nascent"), matching the column
+  headers already used on aimaturitymodels.com's Whole-Model View.
+- `sdlc_transition_states_d4_d13.md` is unchanged and remains the
+  machine-readable file aimaturitymodels.com's build pipeline actually
+  parses -- the two are meant to stay identical in substance going
+  forward, not independently edited; see that file's own README entry.
+
 D2's name corrected (2026-07-27), `shared_intelligence_layer.md`:
 "Buyer/user persona development" → "Buyer & user persona development"
 -- wording only, no change to the dimension's actual scope or maturity
