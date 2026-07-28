@@ -2,6 +2,25 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+Two wording fixes (2026-07-28), caught in a cold AI-read of the family's
+new digest (aimaturitymodels.com's `/ai`, `/llms.txt`) -- David's own
+review, not this repo's own testing:
+- `shared_intelligence_layer.md`'s "Canonical-source rule" still read
+  future-tense ("Upon owner ratification and issuance..."), even though
+  this same document's own Changelog records ratification as already
+  complete (2026-07-23). A cold reader with no other context could
+  reasonably wonder whether the rule was active or only proposed.
+  Retitled "Canonical-source rule — in force" and reworded to present
+  tense. No change to what the rule actually says.
+- `ai_native_sdlc_maturity_model.md`'s closing Status line called D4-D13
+  a "locked baseline" without stating that D11 sits inside that baseline
+  in an explicitly provisional state (marked deferred at its own
+  definition). The two facts don't conflict, but leaving the reader to
+  reconcile them invites exactly the wrong read -- either treating D11
+  as fully settled or silently excluding it. Now states directly that
+  "locked baseline" describes the issued matrix as a whole, not a claim
+  every dimension is equally settled.
+
 `deep_dives/` updated for consistency with the matrix consolidation above
 (2026-07-27). No version bump -- same derived-content treatment as
 always. Two changes:

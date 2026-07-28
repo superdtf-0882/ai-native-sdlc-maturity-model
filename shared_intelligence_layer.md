@@ -198,11 +198,11 @@ The following interfaces describe how each lifecycle consumes the shared layer. 
 
 ---
 
-## Canonical-source rule
+## Canonical-source rule — in force
 
-Upon owner ratification and issuance:
+As ratified and issued (2026-07-23):
 
-1. This artifact becomes the sole source of truth for D1–D3.
+1. This artifact is the sole source of truth for D1–D3.
 2. The SDLC and PDLC inherit this artifact by reference.
 3. Lifecycle-specific interface notes remain outside the inherited maturity definitions.
 4. Human-readable and portable distributions may embed rendered copies, but those copies are derived and are not independently editable.
