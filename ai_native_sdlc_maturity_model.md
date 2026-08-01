@@ -18,7 +18,7 @@ For D4–D13, each level is followed by the transition required to reach the nex
 
 ### Maturity-level names
 
-The five letters A–E carry a family-wide name, identical across every dimension and every model in this family (SDLC, and PDLC/Prioritization once their own repos exist), used as column headers wherever the matrix is rendered:
+The five letters A–E carry a family-wide name, identical across every dimension and every model in this family (SDLC, PDLC, and Prioritization), used as column headers wherever the matrix is rendered:
 
 | Letter | Name | In one line |
 |---|---|---|
