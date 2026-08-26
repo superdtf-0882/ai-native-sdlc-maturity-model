@@ -23,18 +23,45 @@
 # those, not a replacement for them.
 #
 # PROVENANCE (briefs/2026-07-25-compression-provenance/): this compression
-# was verified against both source files at commit 4730189 (tag v1.2.0).
-# Both files live in this same repo and were both last touched in that
-# commit -- one citation covers both, no cross-repo dependency exists yet.
-# `source_matrix_version` below is the checkable claim: run
-# `git diff v1.2.0 HEAD -- ai_native_sdlc_maturity_model.md
-# shared_intelligence_layer.md` from this repo's root -- an empty diff
-# means this compression is still current; any output means it's stale
-# and needs re-verification before being trusted.
+# was originally verified against both source files at commit 4730189
+# (tag v1.2.0). Both files live in this same repo -- one citation covers
+# both, no cross-repo dependency exists yet.
+#
+# RE-VERIFIED 2026-08-26 against cb6ffd1, which is what aimaturitymodels.com
+# pins. cb6ffd1 is 13 commits past the v1.2.0 tag and is itself untagged;
+# the model file still declares Version 1.2.0, so the released version did
+# not move even though the file did.
+#
+# The check below returned 442 changed lines in ai_native_sdlc_maturity_
+# model.md and 8 in shared_intelligence_layer.md, so the re-verification it
+# demands was actually performed -- per cell, not per file:
+#   * all 65 cells parsed at both commits and compared individually
+#   * 14 cells (D1-D3, less D3.E) byte-identical
+#   * 51 cells changed, and in every one the change is APPENDED material:
+#     the Transition and Verification blocks folded inline on 2026-07-27,
+#     plus maturity-level names moved into the level headers. The level
+#     DEFINITION paragraph -- which is what these 65 strings compress --
+#     is byte-identical in all 51.
+#   * 0 cells had their definition rewritten.
+# The compression is still faithful. No cell text is changed here. What
+# was stale was the citation, not the thing it cites.
+#
+# THE CHECK NOW CITES source_matrix_commit AND NOT THE TAG. As originally
+# written it hardcoded v1.2.0, so once any commit landed past that tag it
+# would report stale forever regardless of content -- which is what it did
+# for a month. Run from this repo's root:
+#
+#   git diff <source_matrix_commit> HEAD -- ai_native_sdlc_maturity_model.md shared_intelligence_layer.md
+#
+# An empty diff means this compression is still current. Output means
+# re-verification is REQUIRED before trusting it -- and note that output
+# does not by itself mean the compression is WRONG. Compare the level
+# definition paragraphs cell by cell, as on 2026-08-26: appended
+# transition notes move these files without touching what is compressed.
 
 version: "1.1.0"
 source_matrix_version: "1.2.0"
-source_matrix_commit: "4730189dbcb975d3c200d0e6d9f57ae4f39eb1a1"
+source_matrix_commit: "cb6ffd15f305817dc4bdeef30538a15df86ae505"
 generated: "2026-07-24"
 
 dimensions:
