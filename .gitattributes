@@ -1,0 +1,7 @@
+# Normalize line endings. core.autocrlf is true at SYSTEM scope on this
+# machine (Git for Windows installer default), which nobody chose. This
+# repo is a published source that aimaturitymodels.com fetches by pinned
+# commit, so line-ending churn here is not cosmetic: it obscures real
+# changes in the diffs that every pin bump is verified against.
+# Added 2026-08-25.
+* text=auto
