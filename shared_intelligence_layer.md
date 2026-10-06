@@ -1,6 +1,6 @@
 # AI-Native Shared Intelligence Layer — D1–D3
 
-**STD-SHARED-INTELLIGENCE · v1.0.0 · 2026-07-23**
+**STD-SHARED-INTELLIGENCE · v1.1 · 2026-10-06**
 
 > The canonical definition of D1–D3, inherited by reference by the AI-Native SDLC Maturity Model (this repo) and the AI-Native PDLC Maturity Model. This document is the sole source of truth for these three dimensions — `ai_native_sdlc_maturity_model.md` no longer maintains its own copy of D1–D3; see that file's own D1–D3 section for the reference pointer and the canonical-source rule.
 
@@ -8,7 +8,7 @@
 
 ## How to read this layer
 
-Each dimension has a definition followed by five maturity levels and realistically adjacent transitions. Maturity does not mean "more AI." AI contributes only where it improves continuity, shared intelligence, evidence quality, cross-functional consumption, or context-specific rendering, without creating separate departmental truths.
+Each dimension has a definition followed by five maturity levels and realistically adjacent transitions. Each transition ends with a verification statement: the observable that proves the destination level is reached rather than claimed. Maturity does not mean "more AI." AI contributes only where it improves continuity, shared intelligence, evidence quality, cross-functional consumption, or context-specific rendering, without creating separate departmental truths.
 
 The three dimensions remain independently scoreable through Levels A–D. At Level E, they converge into one continuously maintained intelligence layer:
 
@@ -32,6 +32,8 @@ Discovery happens periodically, such as during planning cycles, and is manually 
 
 Establish a consistent AI-assisted method for market-opportunity analysis. Define the minimum outputs required — including TAM/SAM/SOM, trend analysis, and opportunity framing — and use the same method for every discovery cycle, not only when someone requests it.
 
+**Verification:** Two consecutive discovery cycles produce the same minimum output set — TAM/SAM/SOM, trend analysis, opportunity framing — by the same AI-assisted method, and the next cycle's date is known before the current one closes.
+
 **Level B**
 
 Discovery runs on a defined cadence, such as quarterly, using a consistent AI-assisted method. It remains primarily a Product-owned exercise: outputs are produced for Product's own use and are not routinely shared with Marketing, Sales, or Strategy.
@@ -39,6 +41,8 @@ Discovery runs on a defined cadence, such as quarterly, using a consistent AI-as
 **Transition from B to C**
 
 Move from cadence-based to continuous discovery. Replace the periodic cycle with a standing feed of market signals and opportunity-model updates. The test is whether a material market shift between planning cycles is detected and surfaced without waiting for the next scheduled review.
+
+**Verification:** A material market shift that occurs between planning cycles appears in the opportunity model before the next scheduled review, without anyone having requested a refresh.
 
 **Level C**
 
@@ -48,6 +52,8 @@ Discovery becomes continuous rather than cadence-based. Market signals, trend an
 
 Open the discovery model as a shared asset. Marketing, Sales Enablement, and Strategy should draw directly from the same underlying market and opportunity intelligence rather than request a summary from Product. Define which outputs each function consumes and establish the access path.
 
+**Verification:** A Marketing, Sales Enablement, or Strategy participant retrieves current market and opportunity intelligence from the shared model directly, without a request to Product and without Product producing a summary.
+
 **Level D**
 
 The continuous discovery model is a shared asset. Marketing, Sales Enablement, and Strategy draw directly from the same underlying market and opportunity model rather than commissioning separate research. Each function still produces its own context-specific rendering manually.
@@ -55,6 +61,8 @@ The continuous discovery model is a shared asset. Marketing, Sales Enablement, a
 **Transition from D to E**
 
 Converge D1, D2, and D3 as one shared intelligence layer and automate function-specific rendering. A material market update should propagate into the relevant Product, Marketing, Sales, and Strategy outputs without a separate commissioning or human reformulation step.
+
+**Verification:** A material market update propagates into the Product, Marketing, Sales, and Strategy renderings from the one layer, each in its audience's form, without a separate commissioning or human reformulation step — and the renderings agree with one another.
 
 **Level E**
 
@@ -80,6 +88,8 @@ User personas exist as static documents created at a point in time, such as a la
 
 Establish a shared persona structure, clear ownership, and a minimum update cadence for both buyer and user personas. Adopt a consistent AI-assisted research and synthesis method rather than relying on departmental or individual practice.
 
+**Verification:** Buyer and user personas share one structure, name an owner, carry the date of their last refresh and the date of the next, and that refresh has happened at least once on schedule.
+
 **Level B**
 
 Buyer and user personas are refreshed on a defined cadence using a consistent AI-assisted research and synthesis method and selected research, usage, or feedback data. They remain primarily Product-owned or departmentally maintained. Other functions receive periodic document renderings rather than consuming a shared, live persona-intelligence system directly.
@@ -87,6 +97,8 @@ Buyer and user personas are refreshed on a defined cadence using a consistent AI
 **Transition from B to C**
 
 Move from periodic persona maintenance and document distribution to a live shared intelligence system. Connect persona attributes to ongoing research, usage, and feedback signals; establish common underlying data and AI intelligence; and extend direct access across Product, Marketing, Sales, and Engineering.
+
+**Verification:** A new research, usage, or feedback signal changes a persona attribute in the shared system without a document being reissued, and a Marketing, Sales, or Engineering participant sees the change at the source.
 
 **Level C**
 
@@ -96,6 +108,8 @@ Buyer and user personas are maintained in a shared system with common update dat
 
 Make personas a directly consumed shared asset rather than a document distributed by Product. Marketing and Sales Enablement should draw from the same persona intelligence for their work, while Engineering receives relevant user context through the requirements management system.
 
+**Verification:** Marketing and Sales Enablement work from the shared persona intelligence with no separately maintained persona of their own, and Engineering reaches relevant user context from inside the requirements management system rather than from a distributed document.
+
 **Level D**
 
 Personas are dynamic, continuously maintained shared assets fed by usage, research, and feedback data. Marketing and Sales Enablement consume them directly rather than commissioning or maintaining separate personas. Engineering has connected access to relevant user context through the requirements management system. Each function still produces its own context-specific rendering manually.
@@ -103,6 +117,8 @@ Personas are dynamic, continuously maintained shared assets fed by usage, resear
 **Transition from D to E**
 
 Converge D1, D2, and D3 as one shared intelligence layer and automate function-specific persona rendering. A meaningful update to buyer or user intelligence should propagate into the relevant Product, Marketing, Sales, Engineering, and Strategy outputs without manual reformulation.
+
+**Verification:** A meaningful change to buyer or user intelligence propagates into the Product, Marketing, Sales, Engineering, and Strategy renderings without manual reformulation, and each rendering remains faithful to the underlying persona.
 
 **Level E**
 
@@ -128,6 +144,8 @@ Positioning was defined at a point in time, such as product launch, and competit
 
 Establish a consistent AI-assisted competitive-monitoring method on a defined cadence. Require a minimum output set — including the competitor landscape, messaging differentiation, and positioning thesis — rather than initiating analysis only when a visible competitive threat appears.
 
+**Verification:** Competitive monitoring has run on its cadence at least twice, each run producing the minimum output set — competitor landscape, messaging differentiation, positioning thesis — and the latest run was not triggered by a competitive event.
+
 **Level B**
 
 Competitive monitoring runs on a defined cadence using a consistent AI-assisted method. It remains primarily a Product- or Strategy-owned exercise: findings inform internal roadmap and positioning discussions but are not routinely packaged for Marketing, Sales, or other consuming functions.
@@ -135,6 +153,8 @@ Competitive monitoring runs on a defined cadence using a consistent AI-assisted 
 **Transition from B to C**
 
 Move from cadence-based to continuous competitive monitoring. Replace scheduled scans with a standing feed of competitor, market, pricing, and messaging signals. Maintain the positioning and strategic differentiation thesis as living intelligence rather than a launch artifact.
+
+**Verification:** A competitor's pricing, product, or messaging change appears in the competitive feed before anyone circulates it by hand, and the positioning thesis carries a revision dated after launch.
 
 **Level C**
 
@@ -144,6 +164,8 @@ Competitive monitoring becomes continuous. A live feed of market, pricing, produ
 
 Open the competitive model as a shared asset. Marketing and Sales Enablement should draw directly from the same underlying intelligence for messaging and battlecards. Maintain the strategic differentiation thesis — what the organization intends to do better than competitors — as an explicit, versioned, and auditable artifact.
 
+**Verification:** Marketing and Sales Enablement build messaging and battlecards from the shared competitive model rather than from commissioned research, and the strategic differentiation thesis can be read at a named version with its change history.
+
 **Level D**
 
 The continuous competitive intelligence feed is a shared asset. Marketing and Sales Enablement draw directly from the same underlying competitive model rather than commissioning separate research. The organization's positioning and strategic differentiation thesis are explicitly maintained and versioned as living artifacts. Each function still produces its own context-specific rendering manually.
@@ -151,6 +173,8 @@ The continuous competitive intelligence feed is a shared asset. Marketing and Sa
 **Transition from D to E**
 
 Converge D1, D2, and D3 as one shared intelligence layer and automate function-specific rendering. Competitive, positioning, and differentiation changes should propagate into Product, Marketing, Sales, Pricing, and Strategy outputs without a separate commissioning or human reformulation step.
+
+**Verification:** A competitive, positioning, or differentiation change propagates into Product, Marketing, Sales, Pricing, and Strategy renderings without a separate commissioning or reformulation step, and the thesis the renderings express is the one at the current version.
 
 **Level E**
 
@@ -218,4 +242,5 @@ This document is the ratified output of the D1–D3 reconciliation (2026-07-23) 
 
 ## Changelog
 
+- **v1.1 — 2026-10-06.** Twelve verification statements added, one after each D1–D3 transition, in the form the D4+ dimensions already use. Ratified by David Facer ("I ratify #143's twelve clauses. Ship D11. David Facer 10/6/2026"), drafted by DTOG (OKF TOGAF `briefs/dtog/`, 2026-10-02, section 3). No level, transition or sustainment text changed. Several transitions already carried a test sentence in their prose; the statement makes it explicit without removing it.
 - **v1.0.0 — 2026-07-23.** Initial canonical registration. Ratified by David Facer ("I ratify the D1–D3 reconciliation — David, 7/23/26"). Ends this repo's own D1–D3 maintenance; see `ai_native_sdlc_maturity_model.md`'s D1–D3 section for the inheritance pointer, and `d1-d3-superseded-v1.1.0.md` for the preserved predecessor text.
