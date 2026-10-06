@@ -15,11 +15,12 @@
 # question is still open. Render it visibly, don't drop it silently.
 # D6 and D9's prior flags were resolved by David directly 2026-07-24 --
 # see README.md's Open Items section for the record -- and are removed
-# here accordingly. D11 remains open.
+# here accordingly. D11's flag was removed 2026-10-06, when the model's
+# v1.3.0 rewrote the dimension.
 #
 # Full definitions, transitions, and reasoning live in
 # ai_native_sdlc_maturity_model.md (D4-D13) and shared_intelligence_layer.md
-# (D1-D3, STD-SHARED-INTELLIGENCE v1.0.0) -- this file is a compression of
+# (D1-D3, STD-SHARED-INTELLIGENCE v1.1) -- this file is a compression of
 # those, not a replacement for them.
 #
 # PROVENANCE (briefs/2026-07-25-compression-provenance/): this compression
@@ -46,6 +47,15 @@
 # The compression is still faithful. No cell text is changed here. What
 # was stale was the citation, not the thing it cites.
 #
+# RE-VERIFIED 2026-10-06 against a60f48d (the matrix commit of v1.3.0), per cell:
+#   * all 65 level definition paragraphs parsed at cb6ffd1 and at a60f48d
+#     (matrix and shared layer) and compared individually
+#   * 60 cells byte-identical; the 5 that changed are D11.A-E, rewritten
+#   * D11.A-E re-compressed from the new definitions, 7-9 words each,
+#     an agent named in each (checked by script); the D11 flag removed
+#   * the shared layer gained only verification lines (v1.1), which no
+#     cell compresses
+#
 # THE CHECK NOW CITES source_matrix_commit AND NOT THE TAG. As originally
 # written it hardcoded v1.2.0, so once any commit landed past that tag it
 # would report stale forever regardless of content -- which is what it did
@@ -59,9 +69,9 @@
 # definition paragraphs cell by cell, as on 2026-08-26: appended
 # transition notes move these files without touching what is compressed.
 
-version: "1.1.0"
-source_matrix_version: "1.2.0"
-source_matrix_commit: "cb6ffd15f305817dc4bdeef30538a15df86ae505"
+version: "1.2.0"
+source_matrix_version: "1.3.0"
+source_matrix_commit: "a60f48da6d0c4183d89af3787a76d225e83fa0f9"
 generated: "2026-07-24"
 
 dimensions:
@@ -157,13 +167,12 @@ dimensions:
 
   D11:
     title: "Security & compliance"
-    flag: "Whole dimension carries deferred/research status in the locked baseline — not yet research-complete, see this model's own README"
     levels:
-      A: "No containment or identity; agent actions go untracked."
-      B: "Sandboxed with pre-checks, but no distinct agent identity yet."
-      C: "Agent actions are now attributable, though still bypassable individually."
-      D: "Gates mandatory, non-bypassable; agent tooling tracked as risk."
-      E: "Policy is enforced live; an agent can be halted."
+      A: "Agents act anonymously; nothing records what they did."
+      B: "Every agent action is attributed and checked, not gated."
+      C: "Agent floor is gated; each role's departures are read."
+      D: "Earned agent refusals are mediated at runtime, non-bypassably."
+      E: "Agent bounds evolve from telemetry on hits and silence."
 
   D12:
     title: "Instrumentation & observability"

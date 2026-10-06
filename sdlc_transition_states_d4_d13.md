@@ -1,8 +1,8 @@
 # AI-Native SDLC Maturity Model
 ## Transition-State Notes for D4–D13
 
-**Version 0.2 — 2026-07-26**
-**Applies to:** AI-Native SDLC Maturity Model v1.2.0
+**Version 0.3 — 2026-10-06**
+**Applies to:** AI-Native SDLC Maturity Model v1.3.0
 **Scope:** D4–D13 only. D1–D3 inherit their transition notes from `shared_intelligence_layer.md`.
 
 **PROVENANCE:** v0.1 was reviewed by Deputy TOGAF dimension-by-dimension
@@ -16,8 +16,10 @@ repo's root -- an empty diff means these notes are still current
 against the locked matrix; any output means re-verification is needed
 before this file is trusted.
 
-`source_matrix_version: "1.2.0"`
-`source_matrix_commit: "4730189dbcb975d3c200d0e6d9f57ae4f39eb1a1"`
+v0.3 (2026-10-06): D11's four transitions and sustainment replaced to match the matrix's v1.3.0 rewrite, generated from the same text, and its draft caution removed; boundary checks D8/D11 reworded, D6/D11 and D11/D12 added. No other dimension changed. The check now cites the matrix commit, as `short_form.yml` does: run `git diff <source_matrix_commit> HEAD -- ai_native_sdlc_maturity_model.md`.
+
+`source_matrix_version: "1.3.0"`
+`source_matrix_commit: "a60f48da6d0c4183d89af3787a76d225e83fa0f9"`
 
 These notes are written for progressive disclosure in the whole-model matrix:
 
@@ -256,35 +258,33 @@ Continuously recalibrate live quality gates. Production evidence should govern e
 
 # D11. Security & compliance
 
-> **Draft caution:** The underlying D11 maturity definition remains marked for further research. These transitions operationalize the current ladder but should inherit that same provisional status.
+### A → B — Name and identify every actor
 
-### A → B — Contain agent execution
+Give each agent session an identity distinct from the human — a per-agent or per-session credential, or a required provenance mark carried in the change path — and require it on every material action: commits, deploys, publications, external calls. Check it — by review, by a stated convention, or by a hook that warns — so that an unattributed change is seen and attributed before anything relies on it. Scan generated artifacts deterministically (SAST, secret detection) regardless of origin, and read what the scan reports.
 
-Introduce sandboxing, filesystem and network restrictions, pre-execution checks for dangerous operations, and deterministic scanning for generated artifacts. Define the minimum actions an agent may perform and deny unrestricted use of shared human environments.
+**Verification:** Every material agent action can be traced to a specific agent, session and initiating human; an unattributed change is caught and attributed before it is relied on; a scan runs on every generated artifact and its findings are read.
 
-**Verification:** An agent cannot perform a destructive or unauthorized filesystem, shell, or network action merely because the initiating human could.
+### B → C — Make the floor structural, declare the minimum, and read the departures
 
-### B → C — Give agent activity distinct identity and provenance
+Make the floor a gate: an unattributed change, an act with no authority path, and a pushed secret are refused rather than caught. Then, for each agent role, establish and document the minimum set of actions it needs — least privilege as a stated ideal, not a wall inferred from imagined failures. Install pre-execution observation that classifies every action against the declared minimum and logs each departure by kind — would-refuse, would-ask — without refusing it, except for two classes the practice documents with their sources and denies outright: the irreversible (destruction of pushed history, repositories or releases; exfiltration of secrets; whatever else the practice can show cannot be undone) and the obligated (what a regulator, a contract or a named policy forbids, reversible or not). Calibrate the observation against the practice's real past actions before it runs, so that the minimum is drawn where the work is rather than where fear is. Read the departure log at a stated cadence.
 
-Use per-agent or per-session credentials and associate each agent-authored change with the initiating human and session. Require this provenance in the change path, and add baseline integrity validation for shared memory or context.
+**Verification:** The floor refuses — an unattributed change does not land and a secret does not leave the repository; each role's authorized extent and declared minimum are documented, current, and available to the role that works under it and to anyone assessing it; every departure is logged with its kind; the log is read on its cadence; a minimum contacted often has been revised or the process behind the contact fixed; the irreversible and obligated classes are denied, each documented with its source; and the observation point's reach has been established by attempt, not inferred from its configuration.
 
-**Verification:** Every material agent action is attributable to a specific agent session and initiating human, and shared context has inspectable provenance.
+### C → D — Earn the refusals, mediate them at runtime, and declare what is not mediated
 
-### C → D — Make controls centrally enforced and non-bypassable
+Move a departure class from logged to refused only when its log shows the refusal would fire rarely and the harm is real; keep a named, logged exception path for every refusal. Mediate the floor and the refused classes at the point of action — least-privilege scoping and runtime authorization bound each action as it happens, with the ability to constrain or terminate an agent while it acts — and make them non-bypassable by an individual except through that path. Require every observation and refusal point to declare the paths by which it can be crossed, or to assert that none exist. Assemble audit evidence from the logs rather than by hand. Scan the tooling inventory as supply-chain surface, and monitor shared memory and context actively for injected, poisoned or anomalous content, not only for provenance.
 
-Replace individually bypassable controls with mandatory gates and a named, logged exception process. Inventory skills, plugins, MCP servers, and other agent tooling as supply-chain components subject to approval and scanning. Automate audit-evidence assembly.
+**Verification:** Every refusal and every exception identifies its authority, rationale, scope and duration; the set of refused classes can be shown to derive from the departure log; unsafe behavior can be constrained or terminated while it is occurring, and an individual cannot silently bypass the floor or a refused class; every observation and refusal point declares the paths by which it can be crossed, or asserts that none exist; an active context-integrity threat is detected while active; audit evidence assembles itself; and the runtime enforcement has been exercised, not only documented.
 
-**Verification:** An individual cannot silently bypass required controls, and every exception identifies its authority, rationale, scope, and duration.
+### D → E — Instrument the hits and the silence
 
-### D → E — Enforce policy at the point of action
+Connect refusals, exceptions and departures to a continuous loop that reads both where bounds were hit and where they never were. A refusal that is never contacted is reviewed for removal unless it guards an irreversible act or a stated obligation; a minimum contacted often is a process defect to fix, not a security success. Feed what the loop finds into the practice's priorities, so that bounds and process are revised on evidence.
 
-Apply least privilege, runtime authorization, behavior guardrails, and real-time termination capability during agent execution. Actively monitor shared memory and context for injected, poisoned, anomalous, or unauthorized content.
-
-**Verification:** The organization can constrain or terminate unsafe behavior while it is occurring and can detect active context-integrity threats.
+**Verification:** The loop reports both bounds that were hit and controls that never fired, and at least one refusal or minimum has been retired, revised or confirmed necessary on that evidence.
 
 ### Level E sustainment
 
-Exercise kill switches, exception paths, context-integrity controls, and least-privilege boundaries regularly. Runtime enforcement that is not tested is only documented intent.
+Exercise the kill switch, the exception path, the context-integrity controls and each role's extent and minimum regularly, and keep reading the departure log. A refusal never contacted is reviewed for removal unless it guards an irreversible act or a stated obligation; a minimum contacted often is a process defect, not a security success. Runtime enforcement that is not tested is only documented intent.
 
 ---
 
@@ -367,10 +367,16 @@ Protect quality, evidence, authority, and intent while compressing time. The loo
 - D8 evaluates broader correctness, security, maintainability, performance, and alignment with intent.
 - Encoded architecture rules do not eliminate the need for risk-tiered review.
 
+## D6 / D11
+
+- D6 governs what an agent may build.
+- D11 governs what an agent may do.
+- A documented minimum is not an architectural rule, and an encoded architecture does not bound execution.
+
 ## D8 / D11
 
 - D8 reviews code and artifacts.
-- D11 contains agent execution and governs agent identity, tooling, runtime action, and context integrity.
+- D11 attributes, bounds and observes agent execution, and refuses what lacks the floor, the irreversible and the obligated.
 - Strong code review does not make unrestricted agent execution safe.
 
 ## D9 / D10
@@ -378,6 +384,12 @@ Protect quality, evidence, authority, and intent while compressing time. The loo
 - D9 supplies the environments through which code moves.
 - D10 governs whether and how validated changes advance into production.
 - Self-provisioning environments do not imply autonomous release authority.
+
+## D11 / D12
+
+- D11 emits the departure log.
+- D12 keeps and evaluates it with every other trace.
+- A read departure log is D11 at C, not D12 at C.
 
 ## D12 / D13
 
