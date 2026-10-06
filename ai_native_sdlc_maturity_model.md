@@ -1,6 +1,6 @@
 # AI-Native SDLC Maturity Model — Matrix
 
-**Version 1.2.0 — 2026-07-23** (D1–D3 extracted to `shared_intelligence_layer.md`, the new canonical, shared-with-PDLC source for those three dimensions; this matrix inherits them by reference. D4–D13 and the Pre-AI/Exempt mechanics are unchanged from v1.1.0 — see `CHANGELOG.md`). **No version bump 2026-07-27:** D4–D13's transition and verification notes (previously a separate companion, `sdlc_transition_states_d4_d13.md`) and the family-wide maturity-level names (Nascent/Modeled/Continuous/Integral/Telemetric) are now folded directly into this document — consolidation and presentation only, no change to any dimension's maturity content. See `CHANGELOG.md`.
+**Version 1.3.0 — 2026-10-06** (D11 rewritten — every agent action attributable, least-privileged against a declared minimum, and observed — and its deferred marker removed; D1–D3 gain verification statements in `shared_intelligence_layer.md` v1.1. **D11 scores against v1.2.0 are not comparable with scores against v1.3.0** — see `CHANGELOG.md`.) Previously: **Version 1.2.0 — 2026-07-23** (D1–D3 extracted to `shared_intelligence_layer.md`, the new canonical, shared-with-PDLC source for those three dimensions; this matrix inherits them by reference. D4–D13 and the Pre-AI/Exempt mechanics are unchanged from v1.1.0 — see `CHANGELOG.md`). **No version bump 2026-07-27:** D4–D13's transition and verification notes (previously a separate companion, `sdlc_transition_states_d4_d13.md`) and the family-wide maturity-level names (Nascent/Modeled/Continuous/Integral/Telemetric) are now folded directly into this document — consolidation and presentation only, no change to any dimension's maturity content. See `CHANGELOG.md`.
 
 This is the full A–E maturity matrix for all 13 dimensions (D1–D3 by reference, D4–D13 in full below), readable in-browser and directly usable as input to AI tools. **This markdown document is the source of truth for D4–D13** -- `ai_native_sdlc_maturity_model.xlsx` is a derived distribution rendering of it; if the two ever diverge, this document is authoritative and the spreadsheet should be regenerated. D1–D3 are sourced from `shared_intelligence_layer.md`, not this file.
 
@@ -14,11 +14,13 @@ Each dimension below has a definition followed by a five-level maturity ladder (
 
 Dimensions are independently scored -- an organization can be advanced in one dimension and nascent in another. See the working framework document for how dimensions hand off to, constrain, and converge with each other.
 
-For D4–D13, each level is followed by the transition required to reach the next level and a verification statement -- a practical test of whether the destination state has actually been reached, not just claimed. Level E is followed by a sustainment note instead of a further transition, since there is no Level F: at the top of the ladder, the work shifts from climbing to keeping the capability from quietly regressing.
+For D4–D13, each level is followed by the transition required to reach the next level and a verification statement -- a practical test of whether the destination state has actually been reached, not just claimed. Level E is followed by a sustainment note instead of a further transition, since there is no Level F: at the top of the ladder, the work shifts from climbing to keeping the capability from quietly regressing. D1–D3 carry their transitions, verification statements and sustainment in `shared_intelligence_layer.md`.
+
+Every control this model describes is read by the family's guardrail rule, stated once in `guardrail_rule.md`.
 
 ### Maturity-level names
 
-The five letters A–E carry a family-wide name, identical across every dimension and every model in this family (SDLC, PDLC, and Prioritization), used as column headers wherever the matrix is rendered:
+The five letters A–E carry a family-wide name, identical across every dimension and every model in this family (SDLC, PDLC, Prioritization, and Enterprise Architecture), used as column headers wherever the matrix is rendered:
 
 | Letter | Name | In one line |
 |---|---|---|
@@ -517,57 +519,55 @@ Continuously recalibrate live quality gates. Production evidence should govern e
 
 ## D11. Security & compliance
 
-*The capability to identify, assess, and mitigate security and regulatory risk introduced at any stage of the lifecycle, including risks novel to AI-generated artifacts and agent tooling. [Deferred -- needs further research/context]*
-
-> **Draft caution:** The underlying D11 maturity definition remains marked for further research. The transitions below operationalize the current ladder but inherit that same provisional status.
+*The capability to identify, assess, and mitigate security and regulatory risk introduced at any stage of the lifecycle — including risk novel to AI-generated artifacts and agent tooling — by making every agent action attributable to an agent, a session and an initiating human, bounded to its authorized extent and least-privileged against a declared minimum each role documents, and observed so that departures from the minimum are read as telemetry. Refusal is reserved for what every act must carry — a named actor and an authority path — for the irreversible, and for what an obligation names; every departure from the declared minimum is measured.*
 
 **Level A — Nascent**
 
-Agents execute with unrestricted access to the filesystem, shell, and network on whatever system runs them -- no sandboxing, no pre-execution validation of dangerous operations, and no agent-specific identity (agent activity is indistinguishable from the human operating it).
+Agents act anonymously, with no declared extent and no declared minimum. Agent activity is indistinguishable from the human operating it; what an agent may do is whatever that human may do; nothing records what an agent did that it should not have. Failure is discovered after the fact, if at all, by someone looking.
 
-**Transition A → B — Contain agent execution**
+**Transition A → B — Name and identify every actor**
 
-Introduce sandboxing, filesystem and network restrictions, pre-execution checks for dangerous operations, and deterministic scanning for generated artifacts. Define the minimum actions an agent may perform and deny unrestricted use of shared human environments.
+Give each agent session an identity distinct from the human — a per-agent or per-session credential, or a required provenance mark carried in the change path — and require it on every material action: commits, deploys, publications, external calls. Check it — by review, by a stated convention, or by a hook that warns — so that an unattributed change is seen and attributed before anything relies on it. Scan generated artifacts deterministically (SAST, secret detection) regardless of origin, and read what the scan reports.
 
-**Verification:** An agent cannot perform a destructive or unauthorized filesystem, shell, or network action merely because the initiating human could.
+**Verification:** Every material agent action can be traced to a specific agent, session and initiating human; an unattributed change is caught and attributed before it is relied on; a scan runs on every generated artifact and its findings are read.
 
 **Level B — Modeled**
 
-Agents execute within sandboxed environments (restricted syscalls, network egress controls) with pre-execution static checks for dangerous patterns (e.g., destructive shell commands, unvalidated file I/O); deterministic security scanning (SAST, secret detection) runs on all generated code regardless of origin. Agents still lack distinct identities, and shared memory or context across sessions is not integrity-checked.
+Every material agent action is attributable, and attribution is checked by a person or a convention rather than enforced by a gate. Generated artifacts are scanned deterministically and the findings are read. No minimum is yet declared: an agent's authorized extent is whatever the human's is, now with a name on it, and nothing reads how far from a minimum the agent's actions range.
 
-**Transition B → C — Give agent activity distinct identity and provenance**
+**Transition B → C — Make the floor structural, declare the minimum, and read the departures**
 
-Use per-agent or per-session credentials and associate each agent-authored change with the initiating human and session. Require this provenance in the change path, and add baseline integrity validation for shared memory or context.
+Make the floor a gate: an unattributed change, an act with no authority path, and a pushed secret are refused rather than caught. Then, for each agent role, establish and document the minimum set of actions it needs — least privilege as a stated ideal, not a wall inferred from imagined failures. Install pre-execution observation that classifies every action against the declared minimum and logs each departure by kind — would-refuse, would-ask — without refusing it, except for two classes the practice documents with their sources and denies outright: the irreversible (destruction of pushed history, repositories or releases; exfiltration of secrets; whatever else the practice can show cannot be undone) and the obligated (what a regulator, a contract or a named policy forbids, reversible or not). Calibrate the observation against the practice's real past actions before it runs, so that the minimum is drawn where the work is rather than where fear is. Read the departure log at a stated cadence.
 
-**Verification:** Every material agent action is attributable to a specific agent session and initiating human, and shared context has inspectable provenance.
+**Verification:** The floor refuses — an unattributed change does not land and a secret does not leave the repository; each role's authorized extent and declared minimum are documented, current, and available to the role that works under it and to anyone assessing it; every departure is logged with its kind; the log is read on its cadence; a minimum contacted often has been revised or the process behind the contact fixed; the irreversible and obligated classes are denied, each documented with its source; and the observation point's reach has been established by attempt, not inferred from its configuration.
 
 **Level C — Continuous**
 
-Agent actions are mapped to identifiable, auditable identities (per-agent or per-session credentials, not shared human credentials) -- every agent-authored change can be traced to a specific agent, session, and initiating human. PR gates require this labeling, though individual override of the gate remains possible. Shared memory/context stores have basic integrity validation (e.g., provenance tagging) but no active poisoning detection.
+Each role's authorized extent and declared minimum are documented and current. The floor — a named actor, an authority path, no secret leaving the repository — is refused by a gate rather than checked by a person. Departures from the minimum are observed continuously and read each cycle; beyond the floor, only the irreversible and obligated classes are refused. Agent tooling — skills, plugins, MCP servers — is inventoried as part of the authorized extent. Shared memory and context carry provenance. The practice knows, from counts, which bounds are contacted and which never are, and treats a frequently contacted minimum as a process defect rather than a security success.
 
-**Transition C → D — Make controls centrally enforced and non-bypassable**
+**Transition C → D — Earn the refusals, mediate them at runtime, and declare what is not mediated**
 
-Replace individually bypassable controls with mandatory gates and a named, logged exception process. Inventory skills, plugins, MCP servers, and other agent tooling as supply-chain components subject to approval and scanning. Automate audit-evidence assembly.
+Move a departure class from logged to refused only when its log shows the refusal would fire rarely and the harm is real; keep a named, logged exception path for every refusal. Mediate the floor and the refused classes at the point of action — least-privilege scoping and runtime authorization bound each action as it happens, with the ability to constrain or terminate an agent while it acts — and make them non-bypassable by an individual except through that path. Require every observation and refusal point to declare the paths by which it can be crossed, or to assert that none exist. Assemble audit evidence from the logs rather than by hand. Scan the tooling inventory as supply-chain surface, and monitor shared memory and context actively for injected, poisoned or anomalous content, not only for provenance.
 
-**Verification:** An individual cannot silently bypass required controls, and every exception identifies its authority, rationale, scope, and duration.
+**Verification:** Every refusal and every exception identifies its authority, rationale, scope and duration; the set of refused classes can be shown to derive from the departure log; unsafe behavior can be constrained or terminated while it is occurring, and an individual cannot silently bypass the floor or a refused class; every observation and refusal point declares the paths by which it can be crossed, or asserts that none exist; an active context-integrity threat is detected while active; audit evidence assembles itself; and the runtime enforcement has been exercised, not only documented.
 
 **Level D — Integral**
 
-PR gates for agent-authored changes are mandatory and non-bypassable by individual override -- required checks (security scanning, review, labeling) can only be waived through a named, logged exception process. Agent tooling itself (skills, MCP servers, plugins) is inventoried and treated as supply-chain surface subject to the same scanning. Audit evidence generation is automated rather than manually assembled.
+Refusals are earned from telemetry and mediated at the point of action: least-privilege scoping and runtime authorization bound each action as it happens, a kill switch exists and is exercised, and the floor and the refused classes are non-bypassable except by logged exception. Every observation and refusal point states what it does not mediate. Audit evidence is generated from the logs. Agent tooling is inventoried and scanned as supply-chain surface, and shared context is actively monitored. The extent, the minimum, the log and the exception record are one auditable system.
 
-**Transition D → E — Enforce policy at the point of action**
+**Transition D → E — Instrument the hits and the silence**
 
-Apply least privilege, runtime authorization, behavior guardrails, and real-time termination capability during agent execution. Actively monitor shared memory and context for injected, poisoned, anomalous, or unauthorized content.
+Connect refusals, exceptions and departures to a continuous loop that reads both where bounds were hit and where they never were. A refusal that is never contacted is reviewed for removal unless it guards an irreversible act or a stated obligation; a minimum contacted often is a process defect to fix, not a security success. Feed what the loop finds into the practice's priorities, so that bounds and process are revised on evidence.
 
-**Verification:** The organization can constrain or terminate unsafe behavior while it is occurring and can detect active context-integrity threats.
+**Verification:** The loop reports both bounds that were hit and controls that never fired, and at least one refusal or minimum has been retired, revised or confirmed necessary on that evidence.
 
 **Level E — Telemetric**
 
-Security policy for agent behavior is enforced at the point of action -- least-privilege scoping and runtime guardrails constrain what an agent can do during execution, with real-time termination ('kill switch') capability rather than after-the-fact logging alone. Shared memory and context are actively monitored for injected or anomalous content, not merely provenance-tagged.
+Policy is enforced at the point of action and read as telemetry in the same motion. The departure log, the refusals and the controls that never fire are a standing input to the practice's priorities, so that bounds and process co-evolve with the agents that work under them, and a refusal survives only while the evidence, an irreversible act or a stated obligation keeps it.
 
 **Sustainment**
 
-Exercise kill switches, exception paths, context-integrity controls, and least-privilege boundaries regularly. Runtime enforcement that is not tested is only documented intent.
+Exercise the kill switch, the exception path, the context-integrity controls and each role's extent and minimum regularly, and keep reading the departure log. A refusal never contacted is reviewed for removal unless it guards an irreversible act or a stated obligation; a minimum contacted often is a process defect, not a security success. Runtime enforcement that is not tested is only documented intent.
 
 ---
 
@@ -696,10 +696,16 @@ These checks exist because a dimension reaching a high level can look, from a di
 - D8 evaluates broader correctness, security, maintainability, performance, and alignment with intent.
 - Encoded architecture rules do not eliminate the need for risk-tiered review.
 
+### D6 / D11
+
+- D6 governs what an agent may build.
+- D11 governs what an agent may do.
+- A documented minimum is not an architectural rule, and an encoded architecture does not bound execution.
+
 ### D8 / D11
 
 - D8 reviews code and artifacts.
-- D11 contains agent execution and governs agent identity, tooling, runtime action, and context integrity.
+- D11 attributes, bounds and observes agent execution, and refuses what lacks the floor, the irreversible and the obligated.
 - Strong code review does not make unrestricted agent execution safe.
 
 ### D9 / D10
@@ -707,6 +713,12 @@ These checks exist because a dimension reaching a high level can look, from a di
 - D9 supplies the environments through which code moves.
 - D10 governs whether and how validated changes advance into production.
 - Self-provisioning environments do not imply autonomous release authority.
+
+### D11 / D12
+
+- D11 emits the departure log.
+- D12 keeps and evaluates it with every other trace.
+- A read departure log is D11 at C, not D12 at C.
 
 ### D12 / D13
 
@@ -717,4 +729,4 @@ These checks exist because a dimension reaching a high level can look, from a di
 
 ---
 
-*Status: D4-D13 locked baseline, all A-E, now with inline transition and verification notes for every step and Level E sustainment guidance (folded in from `sdlc_transition_states_d4_d13.md` v0.2, 2026-07-27 -- see `CHANGELOG.md`). "Locked baseline" describes the issued state of the matrix as a whole, not a claim that every dimension's content is equally settled: D11 is explicitly provisional (marked "Deferred -- needs further research/context" at its own definition, its transitions inheriting that same provisional status) and is included in this baseline deliberately, not excluded -- the point is that its status stays visible rather than silently smoothed over. D1-D3 inherited by reference from `shared_intelligence_layer.md` (STD-SHARED-INTELLIGENCE v1.0.0) as of 2026-07-23, which carries its own transition notes inline already -- see that document's own status. Family-wide maturity-level names (Nascent/Modeled/Continuous/Integral/Telemetric) applied throughout as of 2026-07-27. See `README.md` for open items, flagged candidate "lumpy" transitions, and known areas expected to evolve.*
+*Status: D4-D13 locked baseline, all A-E, now with inline transition and verification notes for every step and Level E sustainment guidance (folded in from `sdlc_transition_states_d4_d13.md` v0.2, 2026-07-27 -- see `CHANGELOG.md`). D11 was rewritten in v1.3.0 (2026-10-06) from the practice's own record and is no longer marked deferred; D11 scores against the v1.2.0 ladder are not comparable with scores against this one (see `CHANGELOG.md`). D1-D3 inherited by reference from `shared_intelligence_layer.md` (STD-SHARED-INTELLIGENCE v1.1 as of 2026-10-06), which carries its own transition notes and verification statements inline -- see that document's own status. Family-wide maturity-level names (Nascent/Modeled/Continuous/Integral/Telemetric) applied throughout as of 2026-07-27. See `README.md` for open items, flagged candidate "lumpy" transitions, and known areas expected to evolve.*

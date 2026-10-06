@@ -86,7 +86,7 @@ The capability to provision, configure, and maintain the environments (dev/QA/st
 The capability to govern how validated changes move into production — gating, approval, rollback, compliance, and release communications — as a compressible, on-demand cycle rather than a fixed cadence.
 
 **D11. Security & compliance**
-The capability to identify, assess, and mitigate security and regulatory risk introduced at any stage of the lifecycle, including risks novel to AI-generated artifacts and agent tooling. (Previously deferred; unblocked — see *Open items*.)
+The capability to identify, assess, and mitigate security and regulatory risk introduced at any stage of the lifecycle — including risk novel to AI-generated artifacts and agent tooling — by making every agent action attributable, bounded to its authorized extent and least-privileged against a declared minimum, and observed. (Rewritten in v1.3.0, 2026-10-06; no longer deferred — see `CHANGELOG.md`.)
 
 **D12. Instrumentation & observability**
 The capability to monitor, trace, and evaluate system behavior in production, and to structure organizational knowledge (decisions, plans, metrics) for equal consumption by humans and agents, closing the loop back to upstream dimensions (notably D1). If AI is only used to generate deterministic artifacts (e.g., code, tests, IaC) and is not in the runtime decision path, production observability requirements stay primarily classical; AI-specific tracing/evaluation applies at build time.
@@ -112,7 +112,7 @@ A diagram of the sequential main line (D1–D3 → fused D4/D5/D7 motion; D6 →
 
 - **D6's C→D — RESOLVED 2026-07-24.** Per Design Principle 8, this transition ("turn tribal taste into agent-actionable encoded rules") was flagged as a candidate "lumpy" transition — a larger-than-average lift reflecting a real organizational shift (advisory/manual enforcement to mandatory/structural enforcement), not a modeling error to smooth over. **David's direct review: "Steep but inescapable given current understanding, and maps to a correspondingly large reward for the cost."** No longer an open review item.
 
-- **D11's C→D — still open, candidate "lumpy" transition.** Per Design Principle 8, this transition ("make PR gates mandatory + inventory agent tooling as supply chain") may represent a larger-than-average lift — the same underlying organizational shift D6 exhibited (see above, now resolved), viewed from a second dimension. Worth flagging to reviewers rather than smoothing over — unlike D6, this one remains unresolved.
+- **D11's B→C — named lumpy, not split (2026-10-06).** Per Design Principle 8. In the v1.3.0 rewrite this one step makes the floor a gate, documents each role's authorized extent and declared minimum, installs observation of every departure, and starts reading the log on a cadence — a larger-than-average lift, recorded rather than smoothed over. Splitting it would make one level carry two unrelated things; the step's opening, *"Make the floor a gate"*, keeps its first part legible. The earlier candidate, D11's C→D in v1.2.0, no longer exists in that form.
 
 - **D4/D5/D7 fusion at E** — resolved via shared "sequence-agnostic" property language, each dimension describing the same fused motion from its own vantage (specification/prototype/test) without restating the others' content. **D1/D2/D3 fusion at E** — resolved via shared "converged intelligence layer" object language (anchored to a real-world reference: expona.ai), each dimension describing the same converged layer from its own input lens (market/buyer/competitive) without restating the others' content. Both patterns may be worth revisiting as a named structural feature of the model — dimensions that are organizationally distinct at low maturity but converge into one system at E, either around a shared property (D4/D5/D7) or a shared object (D1/D2/D3). D9/D10 (parallel/continuous in CI/CD) is a third instance of dimensions converging, though without merging language at the E-level text itself.
 
@@ -120,7 +120,7 @@ A diagram of the sequential main line (D1–D3 → fused D4/D5/D7 motion; D6 →
 
 - **D12/D13 — built on a non-determinism-location principle.** D12's ladder is organized around the question "where does non-determinism currently live in our delivery system — build-time generation (D4-D8) or runtime decisions (D9-E/D10-E)?" rather than "do we have RAG/trace/eval." This deliberately separates D12 (observability of the org's own delivery system) from the separate question of whether the org's product has AI in its runtime path (which is a product-architecture question, out of scope for this model). D13 depends on D12 reaching roughly C/D before stage-resolved cycle-time attribution is possible — D12 and D13 are closely coupled rung-for-rung.
 
-- **D8/D11 relationship.** D8's "structurally independent AI review layer becomes enforceable" (C→D) and D11's "PR gates become mandatory" (C→D) are plausibly the same organizational shift viewed from two dimensions (review and security). D8's definition carries a permanent cross-reference note: review of generated code (D8) is not a substitute for execution containment (D11) at any maturity level — the two dimensions address different surfaces.
+- **D8/D11 relationship.** D8's "structurally independent AI review layer becomes enforceable" (C→D) and D11's refusals becoming non-bypassable at the point of action (C→D, v1.3.0) are plausibly the same organizational shift viewed from two dimensions (review and security). D8's definition carries a permanent cross-reference note: review of generated code (D8) is not a substitute for bounding agent execution (D11) at any maturity level — the two dimensions address different surfaces.
 
 **Carried forward, not yet addressed:**
 
@@ -135,7 +135,7 @@ Locked baseline. All 13 dimensions defined A–E. The open items above are carri
 
 ## Files in this repo
 
-- `ai_native_sdlc_maturity_model.xlsx` — the full A–E maturity matrix for all 13 dimensions (D1–D3 pending regeneration — see `shared_intelligence_layer.md`)
+- `ai_native_sdlc_maturity_model.xlsx` — the full A–E maturity matrix for all 13 dimensions (D1–D3 and D11 pending regeneration — see `shared_intelligence_layer.md` and `CHANGELOG.md` v1.3.0)
 - `ai_native_sdlc_maturity_model.md` — markdown version of the matrix for D4–D13; D1–D3 inherited by reference (2026-07-23)
 - `shared_intelligence_layer.md` — canonical D1–D3 source (`STD-SHARED-INTELLIGENCE` v1.0.0), shared with the AI-Native PDLC Maturity Model
 - `short_form.yml` — one-sentence-per-cell compression of all 13 dimensions, derived from this matrix and `shared_intelligence_layer.md`, for consumption by external sites (e.g. aimaturitymodels.com's Whole-Model View); not a source of truth, regenerate if it diverges
