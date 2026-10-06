@@ -51,6 +51,12 @@ Weekly batch review: scan for 🆕 and 🔍 first. 🕒 entries are worth a peri
 
 ## Resolved (✅)
 
+### F-005 — D11 deferred for further research (self-identified)
+**Status:** ✅ Resolved — v1.3.0 (2026-10-06)
+**Source:** Internal — the model's own deferred marker on D11, carried since v1.0.0.
+**Point:** D11's ladder was marked "Deferred -- needs further research/context", and its transitions inherited that provisional status.
+**Resolution:** Rewritten from the practice's own record of governing its AI agents: attribution first; a declared minimum per role, observed as telemetry; refusal reserved for the floor, the irreversible and the obligated; further refusals earned from the log. See `CHANGELOG.md`, v1.3.0.
+
 ### F-004 — D13 as executive anchor
 **Status:** ✅ Resolved — reflected in v1.0 (README framing, 2026-07-15)
 **Source:** Thomas, LinkedIn feedback, 2026-06-16 (recommendation 6)

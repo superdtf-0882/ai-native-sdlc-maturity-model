@@ -2,6 +2,55 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+## v1.3.0 — 2026-10-06
+
+D11 (Security & compliance) rewritten, and D1–D3 gain verification
+statements: one release for both. Ratified by David Facer ("D11 adopted
+as revised 10-05, with 94-DT2's advice ... -- David Facer 10/5/2026";
+"I ratify #143's twelve clauses. Ship D11. David Facer 10/6/2026").
+
+**D11 scores against v1.2.0 are not comparable with scores against
+v1.3.0.** Agent identity moved from C to B, and the walls moved from B
+to C and D, so an organization's D11 score on the old ladder cannot be
+read across to the new one.
+
+Changed:
+- D11 rewritten around three properties: every agent action
+  attributable; bounded to its authorized extent and least-privileged
+  against a declared minimum each role documents; and observed, so that
+  departures from the minimum are read as telemetry. Refusal is reserved
+  for the floor every act must carry (a named actor and an authority
+  path), the irreversible, and what an obligation names. Further
+  refusals are earned from the departure log at C→D and mediated at the
+  point of action at D; E is the loop over the controls that were hit
+  and the ones that never fired. The "[Deferred -- needs further
+  research/context]" marker and the draft caution are removed: the
+  research they asked for is the practice's own record.
+- D11's B→C is named a lumpy transition (README, Open items); the
+  earlier candidate, D11's C→D in v1.2.0, no longer exists in that form.
+- Cross-dimension boundary checks: D8/D11 reworded; D6/D11 and D11/D12
+  added.
+- `shared_intelligence_layer.md` to STD-SHARED-INTELLIGENCE v1.1: twelve
+  verification statements, one after each D1–D3 transition. No level,
+  transition or sustainment text changed.
+- `guardrail_rule.md` added: the family's guardrail rule, in David
+  Facer's words, cited from *How to read this matrix*.
+- The maturity-level-name table names the Enterprise Architecture model,
+  which uses the same five names.
+- Derived files follow: `sdlc_transition_states_d4_d13.md` v0.3,
+  `short_form.yml` v1.2.0 (D11 re-compressed, its flag removed),
+  `deep_dives/d11.md` rewritten.
+
+Not changed: every other dimension's levels, transitions and
+verification statements. `ai_native_sdlc_maturity_model.xlsx` is not
+regenerated: its D1–D3 were already pending, and D11 now is too.
+
+Drafting: the D11 text is DTOG's, revised with DT2's advice and adopted
+by the owner; the D1–D3 statements are DTOG's, ratified by the owner;
+landed by CC (OKF TOGAF, briefs/2026-10-01-svm-tranche-3/).
+
+## Earlier unversioned changes — 2026-07-27/28
+
 Two wording fixes (2026-07-28), caught in a cold AI-read of the family's
 new digest (aimaturitymodels.com's `/ai`, `/llms.txt`) -- David's own
 review, not this repo's own testing:
