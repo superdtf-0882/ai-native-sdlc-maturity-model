@@ -2,6 +2,10 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+## v1.3.1 — 2026-10-08
+
+**One citation, and nothing else.** The matrix cited `shared_intelligence_layer.md` as `STD-SHARED-INTELLIGENCE` v1.0.0 where it hands D1–D3 to it; the layer has been v1.1 since 2026-10-06 (v1.3.0, below). The citation now reads v1.1. No level, transition or verification clause changed; scores against v1.3.0 are unaffected. Found by an outside reading of aimaturitymodels.com's full digest (OKF-TOGAF#169).
+
 ## v1.3.0 — 2026-10-06
 
 D11 (Security & compliance) rewritten, and D1–D3 gain verification
