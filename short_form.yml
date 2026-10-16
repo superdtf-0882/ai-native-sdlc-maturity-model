@@ -20,7 +20,7 @@
 #
 # Full definitions, transitions, and reasoning live in
 # ai_native_sdlc_maturity_model.md (D4-D13) and shared_intelligence_layer.md
-# (D1-D3, STD-SHARED-INTELLIGENCE v1.1) -- this file is a compression of
+# (D1-D3, STD-SHARED-INTELLIGENCE v1.2) -- this file is a compression of
 # those, not a replacement for them.
 #
 # PROVENANCE (briefs/2026-07-25-compression-provenance/): this compression
@@ -56,6 +56,16 @@
 #   * the shared layer gained only verification lines (v1.1), which no
 #     cell compresses
 #
+# RE-VERIFIED 2026-10-16 against 58e352d (the text commit of v1.4.0), per cell:
+#   * the 15 D1-D3 level definition paragraphs parsed at a60f48d and at
+#     58e352d and compared individually; D4-D13 untouched by the release
+#   * 9 changed (D1.B-D, D2.A-D, D3.B, D3.D) for STD-SHARED-INTELLIGENCE
+#     v1.2: the owner named as one function rather than Product, and at D
+#     no function keeping its own version; 6 byte-identical
+#   * each of the 9 compressions read against its new definition: every
+#     one already reads chair-neutral ("one function's own", "Functions
+#     share one AI model") and still holds, so no cell text is changed
+#
 # THE CHECK NOW CITES source_matrix_commit AND NOT THE TAG. As originally
 # written it hardcoded v1.2.0, so once any commit landed past that tag it
 # would report stale forever regardless of content -- which is what it did
@@ -70,8 +80,8 @@
 # transition notes move these files without touching what is compressed.
 
 version: "1.2.0"
-source_matrix_version: "1.3.0"
-source_matrix_commit: "a60f48da6d0c4183d89af3787a76d225e83fa0f9"
+source_matrix_version: "1.4.0"
+source_matrix_commit: "58e352de64afc2e1f790d71427fe130bf7618df9"
 generated: "2026-07-24"
 
 dimensions:
