@@ -2,6 +2,8 @@
 
 **Version 1.4.0 — 2026-10-16.** D1–D3 are inherited by reference from `shared_intelligence_layer.md` (`STD-SHARED-INTELLIGENCE` v1.2), shared with the AI-Native PDLC Maturity Model, and read the same from every function's chair; at D, D1 and D3 now also require that no function keeps its own version. Every release since v1.0.0 (2026-07-19) is in `CHANGELOG.md`, and each is tagged.
 
+**Versions.** The repository's release tag versions the repository; the model's own version line names the release that last changed its text. A release that changes only other files leaves the version line as it was.
+
 ## Purpose
 
 A diagnostic framework for assessing the maturity of a software delivery system that assumes an AI-native baseline — not a framework for transitioning a traditional SDLC onto AI tooling. The goal is a current-state read with enough granularity to identify realistically adjacent next states, not a description of pinnacle practice.
