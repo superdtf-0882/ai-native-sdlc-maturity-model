@@ -1,6 +1,6 @@
 # AI-Native Shared Intelligence Layer — D1–D3
 
-**STD-SHARED-INTELLIGENCE · v1.1 · 2026-10-06**
+**STD-SHARED-INTELLIGENCE · v1.2 · 2026-10-16**
 
 > The canonical definition of D1–D3, inherited by reference by the AI-Native SDLC Maturity Model (this repo) and the AI-Native PDLC Maturity Model. This document is the sole source of truth for these three dimensions — `ai_native_sdlc_maturity_model.md` no longer maintains its own copy of D1–D3; see that file's own D1–D3 section for the reference pointer and the canonical-source rule.
 
@@ -17,6 +17,8 @@ The three dimensions remain independently scoreable through Levels A–D. At Lev
 - **D3** contributes the positioning, competitive, and strategic differentiation lens.
 
 Function-specific outputs may differ, but they are renderings of the same underlying intelligence — not independently commissioned analyses.
+
+**Reading from a chair.** Each model in the family reads these three dimensions from its own function's chair: the SDLC from Engineering's, the PDLC from Product's, Product Marketing from Marketing's. Through Level C the text describes one function's asset, and a model scores the asset its function operates, or, where its function keeps none of its own, the asset the organisation keeps, whichever function keeps it, as the SDLC does; where more than one function keeps one, the highest level that holds with evidence, as the scoring instrument's select rule reads it. Where more than one function maintains a version of the same asset, Product's user personas beside Marketing's buyer personas, each model scores its own; the dimension is below D by definition, and the distance between the models' scores is the measure of how far apart the versions are, not a scoring error. Level D requires one asset that no function duplicates, so from D upward every chair scores the same letter.
 
 ---
 
@@ -36,7 +38,7 @@ Establish a consistent AI-assisted method for market-opportunity analysis. Defin
 
 **Level B**
 
-Discovery runs on a defined cadence, such as quarterly, using a consistent AI-assisted method. It remains primarily a Product-owned exercise: outputs are produced for Product's own use and are not routinely shared with Marketing, Sales, or Strategy.
+Discovery runs on a defined cadence, such as quarterly, using a consistent AI-assisted method. It remains one function's exercise, typically Product's: outputs are produced for that function's own use and are not routinely shared with the others that need them, whether Product, Marketing, Sales, or Strategy.
 
 **Transition from B to C**
 
@@ -46,17 +48,17 @@ Move from cadence-based to continuous discovery. Replace the periodic cycle with
 
 **Level C**
 
-Discovery becomes continuous rather than cadence-based. Market signals, trend analysis, and opportunity models refresh on an ongoing basis. The intelligence remains primarily Product-owned, although other functions can request access to current findings.
+Discovery becomes continuous rather than cadence-based. Market signals, trend analysis, and opportunity models refresh on an ongoing basis. The intelligence remains one function's, typically Product's, although other functions can request access to current findings.
 
 **Transition from C to D**
 
-Open the discovery model as a shared asset. Marketing, Sales Enablement, and Strategy should draw directly from the same underlying market and opportunity intelligence rather than request a summary from Product. Define which outputs each function consumes and establish the access path.
+Open the discovery model as a shared asset. Product, Marketing, Sales Enablement, and Strategy should draw directly from the same underlying market and opportunity intelligence rather than request a summary from the function that maintains it, and no function should keep a version of its own. Define which outputs each function consumes and establish the access path.
 
-**Verification:** A Marketing, Sales Enablement, or Strategy participant retrieves current market and opportunity intelligence from the shared model directly, without a request to Product and without Product producing a summary.
+**Verification:** A participant from a function other than the maintaining one retrieves current market and opportunity intelligence from the shared model directly, without a request to the maintaining function and without it producing a summary, and no function holds a separately maintained opportunity model.
 
 **Level D**
 
-The continuous discovery model is a shared asset. Marketing, Sales Enablement, and Strategy draw directly from the same underlying market and opportunity model rather than commissioning separate research. Each function still produces its own context-specific rendering manually.
+The continuous discovery model is a shared asset. Product, Marketing, Sales Enablement, and Strategy draw directly from the same underlying market and opportunity model rather than commissioning separate research or maintaining a version of their own. Each function still produces its own context-specific rendering manually.
 
 **Transition from D to E**
 
@@ -82,7 +84,7 @@ Verify that automatic renderings accurately reflect the shared intelligence and 
 
 **Level A**
 
-User personas exist as static documents created at a point in time, such as a launch or major redesign, and are rarely revisited. Buyer personas are often maintained separately by Marketing or Sales. AI use, where present, is inconsistent and left to individual preference.
+Buyer and user personas exist as static documents created at a point in time, such as a launch or major redesign, and are rarely revisited, whichever function keeps them. AI use, where present, is inconsistent and left to individual preference.
 
 **Transition from A to B**
 
@@ -92,7 +94,7 @@ Establish a shared persona structure, clear ownership, and a minimum update cade
 
 **Level B**
 
-Buyer and user personas are refreshed on a defined cadence using a consistent AI-assisted research and synthesis method and selected research, usage, or feedback data. They remain primarily Product-owned or departmentally maintained. Other functions receive periodic document renderings rather than consuming a shared, live persona-intelligence system directly.
+Buyer and user personas are refreshed on a defined cadence using a consistent AI-assisted research and synthesis method and selected research, usage, or feedback data. They remain one function's, typically Product's for user personas and Marketing's for buyer personas. Other functions receive periodic document renderings, or nothing, rather than consuming a shared, live persona-intelligence system directly.
 
 **Transition from B to C**
 
@@ -102,17 +104,17 @@ Move from periodic persona maintenance and document distribution to a live share
 
 **Level C**
 
-Buyer and user personas are maintained in a shared system with common update data and AI intelligence. Usage, research, and feedback signals refresh the representations on an ongoing basis. Access extends across Product, Marketing, Sales, and Engineering, although the intelligence remains primarily maintained by Product and consuming functions still interpret it for their own uses.
+Buyer and user personas are maintained in a shared system with common update data and AI intelligence. Usage, research, and feedback signals refresh the representations on an ongoing basis. Access extends across Product, Marketing, Sales, and Engineering, although the intelligence remains one function's to maintain, typically Product's, and consuming functions still interpret it for their own uses.
 
 **Transition from C to D**
 
-Make personas a directly consumed shared asset rather than a document distributed by Product. Marketing and Sales Enablement should draw from the same persona intelligence for their work, while Engineering receives relevant user context through the requirements management system.
+Make personas a directly consumed shared asset rather than a document distributed by the maintaining function. Product, Marketing, and Sales Enablement should draw from the same persona intelligence for their work, with no separately maintained set in any of them, while Engineering receives relevant user context through the requirements management system.
 
-**Verification:** Marketing and Sales Enablement work from the shared persona intelligence with no separately maintained persona of their own, and Engineering reaches relevant user context from inside the requirements management system rather than from a distributed document.
+**Verification:** Product, Marketing, and Sales Enablement work from the shared persona intelligence with no separately maintained persona in any of them, and Engineering reaches relevant user context from inside the requirements management system rather than from a distributed document.
 
 **Level D**
 
-Personas are dynamic, continuously maintained shared assets fed by usage, research, and feedback data. Marketing and Sales Enablement consume them directly rather than commissioning or maintaining separate personas. Engineering has connected access to relevant user context through the requirements management system. Each function still produces its own context-specific rendering manually.
+Personas are dynamic, continuously maintained shared assets fed by usage, research, and feedback data. Product, Marketing, and Sales Enablement consume them directly rather than commissioning or maintaining separate personas; each buyer and user persona is kept once, in the shared set. Engineering has connected access to relevant user context through the requirements management system. Each function still produces its own context-specific rendering manually.
 
 **Transition from D to E**
 
@@ -148,7 +150,7 @@ Establish a consistent AI-assisted competitive-monitoring method on a defined ca
 
 **Level B**
 
-Competitive monitoring runs on a defined cadence using a consistent AI-assisted method. It remains primarily a Product- or Strategy-owned exercise: findings inform internal roadmap and positioning discussions but are not routinely packaged for Marketing, Sales, or other consuming functions.
+Competitive monitoring runs on a defined cadence using a consistent AI-assisted method. It remains one function's exercise, typically Product's, Strategy's, or Marketing's: findings inform that function's own roadmap and positioning discussions but are not routinely packaged for the other functions that need them.
 
 **Transition from B to C**
 
@@ -162,13 +164,13 @@ Competitive monitoring becomes continuous. A live feed of market, pricing, produ
 
 **Transition from C to D**
 
-Open the competitive model as a shared asset. Marketing and Sales Enablement should draw directly from the same underlying intelligence for messaging and battlecards. Maintain the strategic differentiation thesis — what the organization intends to do better than competitors — as an explicit, versioned, and auditable artifact.
+Open the competitive model as a shared asset. Product, Marketing, and Sales Enablement should draw directly from the same underlying intelligence for roadmap input, messaging, and battlecards, with no separately maintained competitive model in any of them. Maintain the strategic differentiation thesis — what the organization intends to do better than competitors — as an explicit, versioned, and auditable artifact.
 
-**Verification:** Marketing and Sales Enablement build messaging and battlecards from the shared competitive model rather than from commissioned research, and the strategic differentiation thesis can be read at a named version with its change history.
+**Verification:** Product, Marketing, and Sales Enablement build roadmap input, messaging, and battlecards from the shared competitive model rather than from commissioned or separately maintained research, and the strategic differentiation thesis can be read at a named version with its change history.
 
 **Level D**
 
-The continuous competitive intelligence feed is a shared asset. Marketing and Sales Enablement draw directly from the same underlying competitive model rather than commissioning separate research. The organization's positioning and strategic differentiation thesis are explicitly maintained and versioned as living artifacts. Each function still produces its own context-specific rendering manually.
+The continuous competitive intelligence feed is a shared asset. Product, Marketing, and Sales Enablement draw directly from the same underlying competitive model rather than commissioning separate research or maintaining a feed of their own. The organization's positioning and strategic differentiation thesis are explicitly maintained and versioned as living artifacts. Each function still produces its own context-specific rendering manually.
 
 **Transition from D to E**
 
@@ -242,5 +244,6 @@ This document is the ratified output of the D1–D3 reconciliation (2026-07-23) 
 
 ## Changelog
 
+- **v1.2 — 2026-10-16.** D1–D3 read the same from every function's chair. Where they named Product as the owner below D, they name one function, typically Product; a reading-from-a-chair paragraph is added under "How to read this layer"; at the step to D and at D they name Product among the consumers. Below D no maturity state moves, by the reconciliation record's five-axis test run on every changed passage (OKF TOGAF `briefs/2026-10-01-svm-tranche-3/195-DT2` and `196-DT2`). **At D, market discovery (D1) and positioning and competitive intelligence (D3) now also require that no function keeps its own version, as persona development (D2) already did, so a D1 or D3 score of D under v1.1 may read C under v1.2** — a stated change, taken as one. D2 at D now says each buyer and user persona is kept once, in the shared set. Ratified by David Facer ("I ratify STD-SHARED-INTELLIGENCE v1.2 as DTOG-200-fixes settles it, with Fix 1's last clause as 196-DT2 replaces it ... -- David Facer 10/15/2026"), drafted by DTOG (OKF TOGAF `briefs/2026-10-01-svm-tranche-3/product-marketing-model/`), tested by DT2. Work Item OKF-TOGAF#200, spun off from #198 (the AI-Native Product Marketing Maturity Model, which will inherit these three dimensions by reference).
 - **v1.1 — 2026-10-06.** Twelve verification statements added, one after each D1–D3 transition, in the form the D4+ dimensions already use. Ratified by David Facer ("I ratify #143's twelve clauses. Ship D11. David Facer 10/6/2026"), drafted by DTOG (OKF TOGAF `briefs/dtog/`, 2026-10-02, section 3). No level, transition or sustainment text changed. Several transitions already carried a test sentence in their prose; the statement makes it explicit without removing it.
 - **v1.0.0 — 2026-07-23.** Initial canonical registration. Ratified by David Facer ("I ratify the D1–D3 reconciliation — David, 7/23/26"). Ends this repo's own D1–D3 maintenance; see `ai_native_sdlc_maturity_model.md`'s D1–D3 section for the inheritance pointer, and `d1-d3-superseded-v1.1.0.md` for the preserved predecessor text.

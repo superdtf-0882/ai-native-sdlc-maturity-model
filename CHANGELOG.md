@@ -2,6 +2,19 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+## v1.4.0 — 2026-10-16
+
+**D1–D3 read the same from every function's chair, and D is stricter for two of them.** `shared_intelligence_layer.md` moves to STD-SHARED-INTELLIGENCE v1.2, ratified by David Facer ("I ratify STD-SHARED-INTELLIGENCE v1.2 as DTOG-200-fixes settles it, with Fix 1's last clause as 196-DT2 replaces it ... -- David Facer 10/15/2026"), drafted by DTOG and tested by DT2 against the reconciliation record's five axes, passage by passage.
+
+**D1 and D3 scores at D against v1.3.x are not comparable with scores against v1.4.0.** At D, market discovery (D1) and positioning and competitive intelligence (D3) now also require that no function keeps its own version, as buyer and user personas (D2) already did. An organization at D on D1 or D3 whose functions keep separate versions reads C under v1.4.0. Below D no maturity state moves.
+
+Changed, in `shared_intelligence_layer.md`:
+- Where D1–D3 named Product as the owner below D, they name one function, typically Product; at the step to D and at D they name Product among the consumers.
+- A reading-from-a-chair paragraph under "How to read this layer": each model scores from its own function's chair; where its function keeps none, the asset the organisation keeps; where more than one function keeps one, the highest level that holds with evidence, as the scoring instrument's select rule reads it. Where functions keep separate versions, each model scores its own and the distance between the scores is the finding.
+- D2 at D: each buyer and user persona is kept once, in the shared set.
+
+In the matrix: the citation of the layer reads v1.2. No D4–D13 text changed. The short form's D1–D3 cells were re-verified against the new definitions and stand unchanged. Work Item OKF-TOGAF#200.
+
 ## v1.3.1 — 2026-10-08
 
 **One citation, and nothing else.** The matrix cited `shared_intelligence_layer.md` as `STD-SHARED-INTELLIGENCE` v1.0.0 where it hands D1–D3 to it; the layer has been v1.1 since 2026-10-06 (v1.3.0, below). The citation now reads v1.1. No level, transition or verification clause changed; scores against v1.3.0 are unaffected. Found by an outside reading of aimaturitymodels.com's full digest (OKF-TOGAF#169).

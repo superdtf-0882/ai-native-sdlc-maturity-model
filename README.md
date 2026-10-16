@@ -1,6 +1,6 @@
 # AI-Native SDLC Maturity Model — working framework
 
-**Version 1.2.0 — 2026-07-23.** D1–D3 reconciled against a Shared Intelligence Layer candidate and extracted to `shared_intelligence_layer.md`, the new canonical source for those three dimensions shared with the AI-Native PDLC Maturity Model; this repo's matrix now inherits them by reference (predecessor text preserved verbatim at `d1-d3-superseded-v1.1.0.md`). D4–D13 and the Pre-AI/Exempt mechanics from v1.1.0 (2026-07-21) are unchanged. Changes are tracked in `CHANGELOG.md` and diff against the `v1.0.0` tag.
+**Version 1.4.0 — 2026-10-16.** D1–D3 are inherited by reference from `shared_intelligence_layer.md` (`STD-SHARED-INTELLIGENCE` v1.2), shared with the AI-Native PDLC Maturity Model, and read the same from every function's chair; at D, D1 and D3 now also require that no function keeps its own version. Every release since v1.0.0 (2026-07-19) is in `CHANGELOG.md`, and each is tagged.
 
 ## Purpose
 
@@ -137,7 +137,7 @@ Locked baseline. All 13 dimensions defined A–E. The open items above are carri
 
 - `ai_native_sdlc_maturity_model.xlsx` — the full A–E maturity matrix for all 13 dimensions (D1–D3 and D11 pending regeneration — see `shared_intelligence_layer.md` and `CHANGELOG.md` v1.3.0)
 - `ai_native_sdlc_maturity_model.md` — markdown version of the matrix for D4–D13; D1–D3 inherited by reference (2026-07-23)
-- `shared_intelligence_layer.md` — canonical D1–D3 source (`STD-SHARED-INTELLIGENCE` v1.0.0), shared with the AI-Native PDLC Maturity Model
+- `shared_intelligence_layer.md` — canonical D1–D3 source (`STD-SHARED-INTELLIGENCE` v1.2), shared with the AI-Native PDLC Maturity Model
 - `short_form.yml` — one-sentence-per-cell compression of all 13 dimensions, derived from this matrix and `shared_intelligence_layer.md`, for consumption by external sites (e.g. aimaturitymodels.com's Whole-Model View); not a source of truth, regenerate if it diverges
 - `sdlc_transition_states_d4_d13.md` — canonical A→B/B→C/C→D/D→E transition notes and Level E sustainment notes for D4–D13 (v0.2, 2026-07-26), each transition carrying a testable verification clause; D1–D3 transitions live in `shared_intelligence_layer.md` instead. Reviewed against this matrix at `v1.2.0` (see the file's own PROVENANCE note). Consumed by aimaturitymodels.com's Whole-Model View reveal panel, and, as of 2026-07-27, also folded inline into `ai_native_sdlc_maturity_model.md`'s own D4–D13 sections for direct in-document readability — this file remains the machine-readable original the site's parser consumes; the two are kept identical in substance, not independently edited.
 - `deep_dives/` — narrative-style Per-Dimension Deep-Dive content (one file per dimension), for aimaturitymodels.com's Deep-Dive pages; derived from this matrix and `shared_intelligence_layer.md`, not independently versioned
