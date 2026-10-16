@@ -66,6 +66,11 @@
 #     one already reads chair-neutral ("one function's own", "Functions
 #     share one AI model") and still holds, so no cell text is changed
 #
+# RE-VERIFIED 2026-10-16 against b51c705 (the text commit of v1.4.1): the
+#   diff from 58e352d is the version line and the closing status line's
+#   citation of the layer, neither of which any cell compresses; all 15
+#   D1-D3 definitions byte-identical. No cell text is changed.
+#
 # THE CHECK NOW CITES source_matrix_commit AND NOT THE TAG. As originally
 # written it hardcoded v1.2.0, so once any commit landed past that tag it
 # would report stale forever regardless of content -- which is what it did
@@ -80,8 +85,8 @@
 # transition notes move these files without touching what is compressed.
 
 version: "1.2.0"
-source_matrix_version: "1.4.0"
-source_matrix_commit: "58e352de64afc2e1f790d71427fe130bf7618df9"
+source_matrix_version: "1.4.1"
+source_matrix_commit: "b51c705feaba0529cc24ba8fc8dd7c30653bd7a3"
 generated: "2026-07-24"
 
 dimensions:
