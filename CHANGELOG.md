@@ -2,6 +2,10 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+## v1.4.1 — 2026-10-16
+
+**One citation, and nothing else.** The matrix's closing status line named `shared_intelligence_layer.md` as STD-SHARED-INTELLIGENCE "v1.1 as of 2026-10-06"; v1.4.0 moved the layer to v1.2 and its other citation with it, and missed this one. It now reads v1.2. No level, transition or verification clause changed; scores against v1.4.0 are unaffected. On the owner's line "Release SDLC v1.4.1 for the status line's v1.1 citation as 361-CC describes, and push it with the site's pin -- David Facer 10/15/2026". Work Item OKF-TOGAF#200.
+
 ## v1.4.0 — 2026-10-16
 
 **D1–D3 read the same from every function's chair, and D is stricter for two of them.** `shared_intelligence_layer.md` moves to STD-SHARED-INTELLIGENCE v1.2, ratified by David Facer ("I ratify STD-SHARED-INTELLIGENCE v1.2 as DTOG-200-fixes settles it, with Fix 1's last clause as 196-DT2 replaces it ... -- David Facer 10/15/2026"), drafted by DTOG and tested by DT2 against the reconciliation record's five axes, passage by passage.
