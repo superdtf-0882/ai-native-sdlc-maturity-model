@@ -134,6 +134,7 @@ const MARKERS = /^(### [A-E] — |\*\*Level [A-E]\b|\*\*Transition |### [A-E] �
 const FAMILY_REPO = /github\.com\/superdtf-0882\/(ai-native-[a-z0-9-]+-maturity-model)(?:\/([\w.-]+\.md))?/;
 const POINTER = /^Names, descriptions and the general shape: family_maturity_levels\.md in github\.com\/superdtf-0882\/(ai-native-[a-z0-9-]+-maturity-model) at (v\d+\.\d+\.\d+)\.$/;
 const TAG3 = /\bv\d+\.\d+\.\d+\b/;
+const HISTORY_MARK = "**Status: superseded, not current authority.**";
 const NUMBER = "(?:\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen)";
 const COUNT = new RegExp("\\b[A-Z][\\w-]* has " + NUMBER + "\\b[^.]*,\\s*[A-Z][\\w-]*\\s+(?:has\\s+)?" + NUMBER + "\\b");
 const rawUrl = (repo, tag, file) => "https://raw.githubusercontent.com/superdtf-0882/" + repo + "/" + tag + "/" + file;
@@ -327,6 +328,12 @@ async function checkRelease(root, opts) {
   for (const f of walk(root, "", [])) {
     if (f === base.matrix || layers.includes(f) || /^(README|CHANGELOG|LICENSE)\.md$/.test(f)) continue;
     const t = norm(readIf(path.join(root, f)));
+    // A history file marks itself in its opening lines -- before its first section heading --
+    // in the one form SDLC's d1-d3-superseded-v1.1.0.md carries at L3 (ruled 2026-10-17,
+    // 411-CC): history, not a second home.
+    const tl = t.split("\n");
+    const firstSection = tl.findIndex((l) => /^#{2,6} /.test(l));
+    if (tl.slice(0, firstSection < 0 ? tl.length : firstSection).some((l) => l.startsWith(HISTORY_MARK))) { notes.push(f + ": marked superseded in its opening lines, so read as history, not a second home (§3.1)"); continue; }
     const marks = t.split("\n").filter((l) => MARKERS.test(l)).length;
     const ids = [...new Set((t.match(/^#{2,4} D(\d+)\b/gm) || []).map((h) => "D" + /D(\d+)/.exec(h)[1]))].filter((id) => declared.has(id));
     if (marks && ids.length) later(f + ": a second file carries " + marks + " level, transition, verification or sustainment marker(s) for " + ids.join(", ") + ", which the matrix carries (§3.1, §7.1 item 3)");

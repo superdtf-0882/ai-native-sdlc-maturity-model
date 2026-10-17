@@ -2,6 +2,10 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+## v1.4.2 — 2026-10-17
+
+**The level names move to their one home.** `family_maturity_levels.md` lands beside the shared layer as STD-FAMILY-LEVELS v1.0 (STD-MODEL-PARTS v1.1 §3.6), its text approved by David Facer ("Approve the family file's text as DTOG-family-levels-text gives it; CC lands it in SDLC's #204 release -- David Facer 10/17/2026"). The matrix's names section becomes the five names and a pointer to that file at this tag (STD-MODEL-PARTS M3): its table, its list of models, its lock date and its pointer into the practice's private corpus go, and the one-line descriptions now read with the long dash. The D1–D3 section no longer names the models the layer is shared with (§3.7); the README links the family's page instead. No level, transition or verification changed; scores against v1.4.1 are unaffected. STD-SHARED-INTELLIGENCE v1.2, unchanged. `tools/release-check.js` and `tools/model-parser.js` are the practice's template's current copies. Work Item OKF-TOGAF#204.
+
 ## v1.4.1 — 2026-10-16
 
 **One citation, and nothing else.** The matrix's closing status line named `shared_intelligence_layer.md` as STD-SHARED-INTELLIGENCE "v1.1 as of 2026-10-06"; v1.4.0 moved the layer to v1.2 and its other citation with it, and missed this one. It now reads v1.2. No level, transition or verification clause changed; scores against v1.4.0 are unaffected. On the owner's line "Release SDLC v1.4.1 for the status line's v1.1 citation as 361-CC describes, and push it with the site's pin -- David Facer 10/15/2026". Work Item OKF-TOGAF#200.

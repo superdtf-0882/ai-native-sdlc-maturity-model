@@ -1,10 +1,17 @@
 # AI-Native SDLC Maturity Model — Matrix
 
-**Version 1.4.1 — 2026-10-16** (one citation corrected: the closing status line named the shared layer at v1.1, which this matrix has cited at v1.2 since v1.4.0. No level, transition or verification changed; scores against v1.4.0 are unaffected) Previously: **Version 1.4.0 — 2026-10-16** (D1–D3 inherited from `shared_intelligence_layer.md` at v1.2, which reads the same from every function's chair. **At D, D1 and D3 now also require that no function keeps its own version, so a D1 or D3 score of D against v1.3.x may read C against v1.4.0;** nothing below D moves, and D4–D13 are unchanged — see `CHANGELOG.md`.) Previously: **Version 1.3.1 — 2026-10-08** (one citation corrected: D1–D3 are inherited from `shared_intelligence_layer.md` at v1.1, which this matrix cited as v1.0.0. No level, transition or verification changed; scores against v1.3.0 are unaffected) Previously: **Version 1.3.0 — 2026-10-06** (D11 rewritten — every agent action attributable, least-privileged against a declared minimum, and observed — and its deferred marker removed; D1–D3 gain verification statements in `shared_intelligence_layer.md` v1.1. **D11 scores against v1.2.0 are not comparable with scores against v1.3.0** — see `CHANGELOG.md`.) Previously: **Version 1.2.0 — 2026-07-23** (D1–D3 extracted to `shared_intelligence_layer.md`, the new canonical, shared-with-PDLC source for those three dimensions; this matrix inherits them by reference. D4–D13 and the Pre-AI/Exempt mechanics are unchanged from v1.1.0 — see `CHANGELOG.md`). **No version bump 2026-07-27:** D4–D13's transition and verification notes (previously a separate companion, `sdlc_transition_states_d4_d13.md`) and the family-wide maturity-level names (Nascent/Modeled/Continuous/Integral/Telemetric) are now folded directly into this document — consolidation and presentation only, no change to any dimension's maturity content. See `CHANGELOG.md`.
+**Version 1.4.2 — 2026-10-17** (the level names now have one home, `family_maturity_levels.md` (`STD-FAMILY-LEVELS` v1.0), which this release adds; this matrix carries the five names and a pointer to it, and its D1–D3 section no longer names the models the layer is shared with. No level, transition or verification changed; scores against v1.4.1 are unaffected) Previously: **Version 1.4.1 — 2026-10-16** (one citation corrected: the closing status line named the shared layer at v1.1, which this matrix has cited at v1.2 since v1.4.0. No level, transition or verification changed; scores against v1.4.0 are unaffected) Previously: **Version 1.4.0 — 2026-10-16** (D1–D3 inherited from `shared_intelligence_layer.md` at v1.2, which reads the same from every function's chair. **At D, D1 and D3 now also require that no function keeps its own version, so a D1 or D3 score of D against v1.3.x may read C against v1.4.0;** nothing below D moves, and D4–D13 are unchanged — see `CHANGELOG.md`.) Previously: **Version 1.3.1 — 2026-10-08** (one citation corrected: D1–D3 are inherited from `shared_intelligence_layer.md` at v1.1, which this matrix cited as v1.0.0. No level, transition or verification changed; scores against v1.3.0 are unaffected) Previously: **Version 1.3.0 — 2026-10-06** (D11 rewritten — every agent action attributable, least-privileged against a declared minimum, and observed — and its deferred marker removed; D1–D3 gain verification statements in `shared_intelligence_layer.md` v1.1. **D11 scores against v1.2.0 are not comparable with scores against v1.3.0** — see `CHANGELOG.md`.) Previously: **Version 1.2.0 — 2026-07-23** (D1–D3 extracted to `shared_intelligence_layer.md`, the new canonical, shared-with-PDLC source for those three dimensions; this matrix inherits them by reference. D4–D13 and the Pre-AI/Exempt mechanics are unchanged from v1.1.0 — see `CHANGELOG.md`). **No version bump 2026-07-27:** D4–D13's transition and verification notes (previously a separate companion, `sdlc_transition_states_d4_d13.md`) and the family-wide maturity-level names (Nascent/Modeled/Continuous/Integral/Telemetric) are now folded directly into this document — consolidation and presentation only, no change to any dimension's maturity content. See `CHANGELOG.md`.
 
 This is the full A–E maturity matrix for all 13 dimensions (D1–D3 by reference, D4–D13 in full below), readable in-browser and directly usable as input to AI tools. **This markdown document is the source of truth for D4–D13** -- `ai_native_sdlc_maturity_model.xlsx` is a derived distribution rendering of it; if the two ever diverge, this document is authoritative and the spreadsheet should be regenerated. D1–D3 are sourced from `shared_intelligence_layer.md`, not this file.
 
 For the design principles, handoff structure, research finding, and open items behind this matrix, see `README.md`. For the diagram of how these 13 dimensions hand off to each other, see `sdlc_handoff_diagram.png` / `sdlc_handoff_diagram.html`.
+
+---
+
+## Family maturity names
+
+A — Nascent · B — Modeled · C — Continuous · D — Integral · E — Telemetric
+Names, descriptions and the general shape: family_maturity_levels.md in github.com/superdtf-0882/ai-native-sdlc-maturity-model at v1.4.2.
 
 ---
 
@@ -17,22 +24,6 @@ Dimensions are independently scored -- an organization can be advanced in one di
 For D4–D13, each level is followed by the transition required to reach the next level and a verification statement -- a practical test of whether the destination state has actually been reached, not just claimed. Level E is followed by a sustainment note instead of a further transition, since there is no Level F: at the top of the ladder, the work shifts from climbing to keeping the capability from quietly regressing. D1–D3 carry their transitions, verification statements and sustainment in `shared_intelligence_layer.md`.
 
 Every control this model describes is read by the family's guardrail rule, stated once in `guardrail_rule.md`.
-
-### Maturity-level names
-
-The five letters A–E carry a family-wide name, identical across every dimension and every model in this family (SDLC, PDLC, Prioritization, and Enterprise Architecture), used as column headers wherever the matrix is rendered:
-
-| Letter | Name | In one line |
-|---|---|---|
-| A | **Nascent** | Ad hoc and inconsistent -- nobody has yet defined what "good" looks like here. |
-| B | **Modeled** | A real, deliberate method exists, but it's manual and owned by one person or function. |
-| C | **Continuous** | The method runs constantly on its own cadence, still narrowly owned but always on. |
-| D | **Integral** | The capability is load-bearing and shared beyond its original owner -- removing it would break something real. |
-| E | **Telemetric** | A continuous two-way loop: signal flows in, action flows back out, close to real time. |
-
-These names describe a general shape of maturity, not this dimension's own specific content -- read each level's own text below for what that shape means concretely at D4, D5, and so on. Locked 2026-07-24; full generic definitions at `briefs/2026-07-25-model-data-architecture/01a-maturity-column-definitions.md` in the governing corpus.
-
----
 
 ### Pre-AI — The Threshold State
 
@@ -133,7 +124,7 @@ assessment.
 
 ## D1–D3. Shared Intelligence Layer
 
-D1 (Market discovery & definition), D2 (Buyer & user persona development), and D3 (Positioning & competitive intelligence) are inherited by reference from `shared_intelligence_layer.md` (`STD-SHARED-INTELLIGENCE` v1.2), this repo's own canonical source for these three dimensions, shared with the AI-Native PDLC Maturity Model. This matrix no longer maintains its own copy of D1–D3 — see that document for full definitions, transitions, and the Level E convergence rule.
+D1 (Market discovery & definition), D2 (Buyer & user persona development), and D3 (Positioning & competitive intelligence) are inherited by reference from `shared_intelligence_layer.md` (`STD-SHARED-INTELLIGENCE` v1.2), this repo's own canonical source for these three dimensions. This matrix no longer maintains its own copy of D1–D3 — see that document for full definitions, transitions, and the Level E convergence rule.
 
 Ratified 2026-07-23 following a reconciliation between this matrix's own predecessor D1–D3 text (preserved verbatim, not current authority, at `d1-d3-superseded-v1.1.0.md`) and the Shared Intelligence Layer candidate. Fourteen of fifteen maturity cells carried forward unchanged or with clarification only; one real maturity-state revision landed at D2-B (see `shared_intelligence_layer.md`'s own reconciliation record for the full disposition).
 
