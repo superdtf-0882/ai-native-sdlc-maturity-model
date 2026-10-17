@@ -78,6 +78,13 @@
 #   transitions and sustainment compared by the family parser, 156 fields,
 #   all identical. No cell text is changed.
 #
+# RE-VERIFIED 2026-10-17 against 5c59b11 (the text commit of v1.4.3): the
+#   release is layout only, text-neutral under STD-MODEL-PARTS v1.1 -- the
+#   common markers, a paragraph to a line, two section titles, a basis line
+#   under D1-D3 and the version line; every dimension's definition, levels,
+#   transitions and sustainment compared by the family parser, 156 fields,
+#   all identical. No cell text is changed.
+#
 # THE CHECK NOW CITES source_matrix_commit AND NOT THE TAG. As originally
 # written it hardcoded v1.2.0, so once any commit landed past that tag it
 # would report stale forever regardless of content -- which is what it did
@@ -92,8 +99,8 @@
 # transition notes move these files without touching what is compressed.
 
 version: "1.2.0"
-source_matrix_version: "1.4.2"
-source_matrix_commit: "f87a1ff1bc7d9e2994f96bae7591b43877a98f33"
+source_matrix_version: "1.4.3"
+source_matrix_commit: "5c59b118314c561a24fefe344b01dc95a5b84985"
 generated: "2026-07-24"
 
 dimensions:
