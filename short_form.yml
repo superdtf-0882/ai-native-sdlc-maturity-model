@@ -71,6 +71,13 @@
 #   citation of the layer, neither of which any cell compresses; all 15
 #   D1-D3 definitions byte-identical. No cell text is changed.
 #
+# RE-VERIFIED 2026-10-17 against f87a1ff (the text commit of v1.4.2): the
+#   diff from b51c705 is the version line, the names section (moved to
+#   family_maturity_levels.md) and one clause of the D1-D3 section, none of
+#   which any cell compresses; every dimension's definition, levels,
+#   transitions and sustainment compared by the family parser, 156 fields,
+#   all identical. No cell text is changed.
+#
 # THE CHECK NOW CITES source_matrix_commit AND NOT THE TAG. As originally
 # written it hardcoded v1.2.0, so once any commit landed past that tag it
 # would report stale forever regardless of content -- which is what it did
@@ -85,8 +92,8 @@
 # transition notes move these files without touching what is compressed.
 
 version: "1.2.0"
-source_matrix_version: "1.4.1"
-source_matrix_commit: "b51c705feaba0529cc24ba8fc8dd7c30653bd7a3"
+source_matrix_version: "1.4.2"
+source_matrix_commit: "f87a1ff1bc7d9e2994f96bae7591b43877a98f33"
 generated: "2026-07-24"
 
 dimensions:
