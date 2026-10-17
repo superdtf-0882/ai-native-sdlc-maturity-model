@@ -407,6 +407,9 @@ async function checkRelease(root, opts) {
         }
         if (J(m.namesLine) !== J(B.namesLine)) diffs.push("levelNames");
         if (J((m.readingRules || {}).text) !== J((B.readingRules || {}).text)) diffs.push("readingRules");
+        // 420-CC: the boundaries (M7) and the provenance (M8), their text and not their headings.
+        if (J((m.boundaries || {}).text) !== J((B.boundaries || {}).text)) diffs.push("boundaries");
+        if (J((m.provenance || {}).text) !== J((B.provenance || {}).text)) diffs.push("provenance");
         const tsText = (x) => J([x.thresholdStates.preAI, x.thresholdStates.exempt]);
         if (tsText(m) !== tsText(B)) diffs.push("thresholdStates");
         const priorSf = git(opts.against, "short_form.yml");
@@ -417,7 +420,7 @@ async function checkRelease(root, opts) {
         const labelled = logEntries[0] && textNeutral(logEntries[0]);
         if (diffs.length && labelled) problems.push("the release is labelled text-neutral, but " + diffs.length + " content field(s) differ from " + opts.against + ": " + diffs.join("; ") + " (§6)");
         else if (diffs.length) notes.push(diffs.length + " content field(s) differ from " + opts.against + ", so this is a content release: " + diffs.join("; "));
-        else notes.push("text-neutral against " + opts.against + ": no content field differs (not compared yet: boundaries and provenance)");
+        else notes.push("text-neutral against " + opts.against + ": no content field differs");
       }
     }
   }

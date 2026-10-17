@@ -26,7 +26,7 @@ Function-specific outputs may differ, but they are renderings of the same underl
 
 *The capability to identify, size, and validate market opportunities — including TAM/SAM/SOM, market trends, and opportunity framing — through a continuous, AI-assisted discovery loop that supplies a shared intelligence foundation for requirements, prioritization, and portfolio investment decisions.*
 
-**Level A**
+### A — Nascent
 
 Discovery happens periodically, such as during planning cycles, and is manually synthesized. AI use is inconsistent and left to individual researcher preference, with no shared method.
 
@@ -36,7 +36,7 @@ Establish a consistent AI-assisted method for market-opportunity analysis. Defin
 
 **Verification:** Two consecutive discovery cycles produce the same minimum output set — TAM/SAM/SOM, trend analysis, opportunity framing — by the same AI-assisted method, and the next cycle's date is known before the current one closes.
 
-**Level B**
+### B — Modeled
 
 Discovery runs on a defined cadence, such as quarterly, using a consistent AI-assisted method. It remains one function's exercise, typically Product's: outputs are produced for that function's own use and are not routinely shared with the others that need them, whether Product, Marketing, Sales, or Strategy.
 
@@ -46,7 +46,7 @@ Move from cadence-based to continuous discovery. Replace the periodic cycle with
 
 **Verification:** A material market shift that occurs between planning cycles appears in the opportunity model before the next scheduled review, without anyone having requested a refresh.
 
-**Level C**
+### C — Continuous
 
 Discovery becomes continuous rather than cadence-based. Market signals, trend analysis, and opportunity models refresh on an ongoing basis. The intelligence remains one function's, typically Product's, although other functions can request access to current findings.
 
@@ -56,7 +56,7 @@ Open the discovery model as a shared asset. Product, Marketing, Sales Enablement
 
 **Verification:** A participant from a function other than the maintaining one retrieves current market and opportunity intelligence from the shared model directly, without a request to the maintaining function and without it producing a summary, and no function holds a separately maintained opportunity model.
 
-**Level D**
+### D — Integral
 
 The continuous discovery model is a shared asset. Product, Marketing, Sales Enablement, and Strategy draw directly from the same underlying market and opportunity model rather than commissioning separate research or maintaining a version of their own. Each function still produces its own context-specific rendering manually.
 
@@ -66,15 +66,13 @@ Converge D1, D2, and D3 as one shared intelligence layer and automate function-s
 
 **Verification:** A material market update propagates into the Product, Marketing, Sales, and Strategy renderings from the one layer, each in its audience's form, without a separate commissioning or human reformulation step — and the renderings agree with one another.
 
-**Level E**
+### E — Telemetric
 
 D1, D2, and D3 operate as one converged intelligence layer that automatically generates function-specific renderings — including Product roadmap and requirements input, Marketing messaging, Sales battlecards, and Strategy narratives — from the same continuously updated model, each adapted to its audience without separate commissioning.
 
-From D1's vantage, market signals, trend data, and opportunity models are the input lens this layer continuously refreshes.
+**Vantage:** From D1's vantage, market signals, trend data, and opportunity models are the input lens this layer continuously refreshes.
 
-**Sustainment**
-
-Verify that automatic renderings accurately reflect the shared intelligence and that no consuming function is silently receiving stale or miscontextualized output. Audit D1–D3 convergence periodically to confirm that the layer is coherent, not merely synchronized.
+**Sustainment:** Verify that automatic renderings accurately reflect the shared intelligence and that no consuming function is silently receiving stale or miscontextualized output. Audit D1–D3 convergence periodically to confirm that the layer is coherent, not merely synchronized.
 
 ---
 
@@ -82,7 +80,7 @@ Verify that automatic renderings accurately reflect the shared intelligence and 
 
 *The capability to research, model, and maintain live representations of target users and buyers as a shared intelligence asset across Product, Marketing, Sales Enablement, and Engineering.*
 
-**Level A**
+### A — Nascent
 
 Buyer and user personas exist as static documents created at a point in time, such as a launch or major redesign, and are rarely revisited, whichever function keeps them. AI use, where present, is inconsistent and left to individual preference.
 
@@ -92,7 +90,7 @@ Establish a shared persona structure, clear ownership, and a minimum update cade
 
 **Verification:** Buyer and user personas share one structure, name an owner, carry the date of their last refresh and the date of the next, and that refresh has happened at least once on schedule.
 
-**Level B**
+### B — Modeled
 
 Buyer and user personas are refreshed on a defined cadence using a consistent AI-assisted research and synthesis method and selected research, usage, or feedback data. They remain one function's, typically Product's for user personas and Marketing's for buyer personas. Other functions receive periodic document renderings, or nothing, rather than consuming a shared, live persona-intelligence system directly.
 
@@ -102,7 +100,7 @@ Move from periodic persona maintenance and document distribution to a live share
 
 **Verification:** A new research, usage, or feedback signal changes a persona attribute in the shared system without a document being reissued, and a Marketing, Sales, or Engineering participant sees the change at the source.
 
-**Level C**
+### C — Continuous
 
 Buyer and user personas are maintained in a shared system with common update data and AI intelligence. Usage, research, and feedback signals refresh the representations on an ongoing basis. Access extends across Product, Marketing, Sales, and Engineering, although the intelligence remains one function's to maintain, typically Product's, and consuming functions still interpret it for their own uses.
 
@@ -112,7 +110,7 @@ Make personas a directly consumed shared asset rather than a document distribute
 
 **Verification:** Product, Marketing, and Sales Enablement work from the shared persona intelligence with no separately maintained persona in any of them, and Engineering reaches relevant user context from inside the requirements management system rather than from a distributed document.
 
-**Level D**
+### D — Integral
 
 Personas are dynamic, continuously maintained shared assets fed by usage, research, and feedback data. Product, Marketing, and Sales Enablement consume them directly rather than commissioning or maintaining separate personas; each buyer and user persona is kept once, in the shared set. Engineering has connected access to relevant user context through the requirements management system. Each function still produces its own context-specific rendering manually.
 
@@ -122,15 +120,13 @@ Converge D1, D2, and D3 as one shared intelligence layer and automate function-s
 
 **Verification:** A meaningful change to buyer or user intelligence propagates into the Product, Marketing, Sales, Engineering, and Strategy renderings without manual reformulation, and each rendering remains faithful to the underlying persona.
 
-**Level E**
+### E — Telemetric
 
 D1, D2, and D3 operate as one converged intelligence layer that automatically generates function-specific renderings — including Product roadmap and requirements input, Marketing messaging, Sales battlecards, and Strategy narratives — from the same continuously updated model, each adapted to its audience without separate commissioning.
 
-From D2's vantage, live representations of target users and buyers are the input lens this layer continuously refreshes, extending to Engineering through the requirements management system.
+**Vantage:** From D2's vantage, live representations of target users and buyers are the input lens this layer continuously refreshes, extending to Engineering through the requirements management system.
 
-**Sustainment**
-
-Verify that automatically generated persona renderings remain faithful to the underlying intelligence and have not drifted because of stale data, automation bias, or function-specific reinterpretation. Audit D1–D3 convergence periodically.
+**Sustainment:** Verify that automatically generated persona renderings remain faithful to the underlying intelligence and have not drifted because of stale data, automation bias, or function-specific reinterpretation. Audit D1–D3 convergence periodically.
 
 ---
 
@@ -138,7 +134,7 @@ Verify that automatically generated persona renderings remain faithful to the un
 
 *The capability to define product differentiation and maintain that positioning against a continuously monitored competitive landscape, actively informing roadmap, prioritization, pricing, go-to-market, and portfolio decisions while preserving a current strategic thesis about what the organization intends to do better than competitors.*
 
-**Level A**
+### A — Nascent
 
 Positioning was defined at a point in time, such as product launch, and competitive awareness is ad hoc or anecdotal. AI use, where present, is inconsistent and left to individual preference, with no shared method.
 
@@ -148,7 +144,7 @@ Establish a consistent AI-assisted competitive-monitoring method on a defined ca
 
 **Verification:** Competitive monitoring has run on its cadence at least twice, each run producing the minimum output set — competitor landscape, messaging differentiation, positioning thesis — and the latest run was not triggered by a competitive event.
 
-**Level B**
+### B — Modeled
 
 Competitive monitoring runs on a defined cadence using a consistent AI-assisted method. It remains one function's exercise, typically Product's, Strategy's, or Marketing's: findings inform that function's own roadmap and positioning discussions but are not routinely packaged for the other functions that need them.
 
@@ -158,7 +154,7 @@ Move from cadence-based to continuous competitive monitoring. Replace scheduled 
 
 **Verification:** A competitor's pricing, product, or messaging change appears in the competitive feed before anyone circulates it by hand, and the positioning thesis carries a revision dated after launch.
 
-**Level C**
+### C — Continuous
 
 Competitive monitoring becomes continuous. A live feed of market, pricing, product, and messaging shifts updates on an ongoing basis. Positioning and the strategic differentiation thesis remain primarily owned by Product or Strategy, although other functions can request access to current intelligence.
 
@@ -168,7 +164,7 @@ Open the competitive model as a shared asset. Product, Marketing, and Sales Enab
 
 **Verification:** Product, Marketing, and Sales Enablement build roadmap input, messaging, and battlecards from the shared competitive model rather than from commissioned or separately maintained research, and the strategic differentiation thesis can be read at a named version with its change history.
 
-**Level D**
+### D — Integral
 
 The continuous competitive intelligence feed is a shared asset. Product, Marketing, and Sales Enablement draw directly from the same underlying competitive model rather than commissioning separate research or maintaining a feed of their own. The organization's positioning and strategic differentiation thesis are explicitly maintained and versioned as living artifacts. Each function still produces its own context-specific rendering manually.
 
@@ -178,15 +174,13 @@ Converge D1, D2, and D3 as one shared intelligence layer and automate function-s
 
 **Verification:** A competitive, positioning, or differentiation change propagates into Product, Marketing, Sales, Pricing, and Strategy renderings without a separate commissioning or reformulation step, and the thesis the renderings express is the one at the current version.
 
-**Level E**
+### E — Telemetric
 
 D1, D2, and D3 operate as one converged intelligence layer that automatically generates function-specific renderings — including Product roadmap and requirements input, Marketing messaging, Sales battlecards, and Strategy narratives — from the same continuously updated model, each adapted to its audience without separate commissioning.
 
-From D3's vantage, positioning, the live competitive landscape, and the organization's strategic differentiation thesis are the input lens this layer continuously refreshes.
+**Vantage:** From D3's vantage, positioning, the live competitive landscape, and the organization's strategic differentiation thesis are the input lens this layer continuously refreshes.
 
-**Sustainment**
-
-Verify that automatic competitive and positioning renderings accurately reflect the underlying intelligence and that the strategic differentiation thesis has not silently drifted through automation or local reinterpretation. Audit D1–D3 convergence periodically.
+**Sustainment:** Verify that automatic competitive and positioning renderings accurately reflect the underlying intelligence and that the strategic differentiation thesis has not silently drifted through automation or local reinterpretation. Audit D1–D3 convergence periodically.
 
 ---
 
