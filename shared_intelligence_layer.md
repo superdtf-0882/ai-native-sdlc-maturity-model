@@ -1,8 +1,8 @@
 # AI-Native Shared Intelligence Layer — D1–D3
 
-**STD-SHARED-INTELLIGENCE · v1.2 · 2026-10-16**
+**STD-SHARED-INTELLIGENCE · v1.3 · 2026-10-18**
 
-> The canonical definition of D1–D3, inherited by reference by the AI-Native SDLC Maturity Model (this repo) and the AI-Native PDLC Maturity Model. This document is the sole source of truth for these three dimensions — `ai_native_sdlc_maturity_model.md` no longer maintains its own copy of D1–D3; see that file's own D1–D3 section for the reference pointer and the canonical-source rule.
+> The canonical definition of D1–D3, inherited by reference by each model whose basis line cites it. This document is the sole source of truth for these three dimensions — `ai_native_sdlc_maturity_model.md` no longer maintains its own copy of D1–D3; see that file's own D1–D3 section for the reference pointer and the canonical-source rule.
 
 ---
 
@@ -18,7 +18,9 @@ The three dimensions remain independently scoreable through Levels A–D. At Lev
 
 Function-specific outputs may differ, but they are renderings of the same underlying intelligence — not independently commissioned analyses.
 
-**Reading from a chair.** Each model in the family reads these three dimensions from its own function's chair: the SDLC from Engineering's, the PDLC from Product's, Product Marketing from Marketing's. Through Level C the text describes one function's asset, and a model scores the asset its function operates, or, where its function keeps none of its own, the asset the organisation keeps, whichever function keeps it, as the SDLC does; where more than one function keeps one, the highest level that holds with evidence, as the scoring instrument's select rule reads it. Where more than one function maintains a version of the same asset, Product's user personas beside Marketing's buyer personas, each model scores its own; the dimension is below D by definition, and the distance between the models' scores is the measure of how far apart the versions are, not a scoring error. Level D requires one asset that no function duplicates, so from D upward every chair scores the same letter.
+The unit of these three dimensions is the state of the organization's intelligence — whether the answer to a question is already there, and current, when the question arrives — not the events that update it; a rendering is one audience's form of intelligence the layer already holds.
+
+**Reading from a chair.** Each model that inherits these three dimensions reads them from its own function's chair. Through Level C the text describes one function's asset, and a model scores the asset its function operates, or, where its function keeps none of its own, the asset the organisation keeps, whichever function keeps it; where more than one function keeps one, the highest level that holds with evidence, as the scoring instrument's select rule reads it. Where more than one function maintains a version of the same asset, Product's user personas beside Marketing's buyer personas, each model scores its own; the dimension is below D by definition, and the distance between the models' scores is the measure of how far apart the versions are, not a scoring error. Level D requires one asset that no function duplicates, so from D upward every chair scores the same letter.
 
 ---
 
@@ -28,27 +30,27 @@ Function-specific outputs may differ, but they are renderings of the same underl
 
 ### A — Nascent
 
-Discovery happens periodically, such as during planning cycles, and is manually synthesized. AI use is inconsistent and left to individual researcher preference, with no shared method.
+Discovery happens periodically, such as during planning cycles, or when a question demands it, and each time it is manually synthesized from scratch. AI use is inconsistent and left to individual researcher preference, with no shared method.
 
 **Transition from A to B**
 
-Establish a consistent AI-assisted method for market-opportunity analysis. Define the minimum outputs required — including TAM/SAM/SOM, trend analysis, and opportunity framing — and use the same method for every discovery cycle, not only when someone requests it.
+Establish a consistent AI-assisted method for market-opportunity analysis and one kept corpus that its outputs land in. Define the minimum outputs required — including TAM/SAM/SOM, trend analysis, and opportunity framing — and produce them by the same method into the same corpus every time the work is done, whether a planning cycle or a question occasioned it.
 
-**Verification:** Two consecutive discovery cycles produce the same minimum output set — TAM/SAM/SOM, trend analysis, opportunity framing — by the same AI-assisted method, and the next cycle's date is known before the current one closes.
+**Verification:** The minimum output set — TAM/SAM/SOM, trend analysis, opportunity framing — exists in one kept corpus, produced by one written AI-assisted method, each output dated, and the corpus has been worked at least twice by that method, the later work revising the earlier, in place or as a new edition that carries the earlier forward and states what changed, rather than starting again.
 
 ### B — Modeled
 
-Discovery runs on a defined cadence, such as quarterly, using a consistent AI-assisted method. It remains one function's exercise, typically Product's: outputs are produced for that function's own use and are not routinely shared with the others that need them, whether Product, Marketing, Sales, or Strategy.
+Discovery has a consistent AI-assisted method and one kept corpus, but the corpus is as current as the last time it was worked — a planning cycle, a quarter, or the last question that sent someone back to it — so a question can find it stale and wait for the work. It remains one function's exercise, typically Product's: outputs are produced for that function's own use and are not routinely shared with the others that need them, whether Product, Marketing, Sales, or Strategy.
 
 **Transition from B to C**
 
-Move from cadence-based to continuous discovery. Replace the periodic cycle with a standing feed of market signals and opportunity-model updates. The test is whether a material market shift between planning cycles is detected and surfaced without waiting for the next scheduled review.
+Move from a corpus worked in episodes to one kept current. Work the market signals, trend analysis, and opportunity model continuously, so that a material market shift is in the corpus before anyone asks about it and a question is answered from the corpus as it stands. The test is not how often the corpus is updated but whether a question has to wait for it.
 
-**Verification:** A material market shift that occurs between planning cycles appears in the opportunity model before the next scheduled review, without anyone having requested a refresh.
+**Verification:** A material market shift is in the opportunity model, dated, before anyone asks about it, and a question is answered from the model as it already stood, the entries that answer it dated before the question, with any question that had to wait for new work recorded as a gap.
 
 ### C — Continuous
 
-Discovery becomes continuous rather than cadence-based. Market signals, trend analysis, and opportunity models refresh on an ongoing basis. The intelligence remains one function's, typically Product's, although other functions can request access to current findings.
+Discovery keeps the corpus current rather than updating it in episodes. Market signals, trend analysis, and opportunity models are worked on an ongoing basis, so the answer to a question is already there when the question arrives. The intelligence remains one function's, typically Product's, although other functions can request access to current findings.
 
 **Transition from C to D**
 
@@ -86,17 +88,17 @@ Buyer and user personas exist as static documents created at a point in time, su
 
 **Transition from A to B**
 
-Establish a shared persona structure, clear ownership, and a minimum update cadence for both buyer and user personas. Adopt a consistent AI-assisted research and synthesis method rather than relying on departmental or individual practice.
+Establish a shared persona structure, clear ownership, and one kept set for both buyer and user personas, with a stated refresh rule — a cadence, a condition such as a launch or a decision that needs them current, or both. Adopt a consistent AI-assisted research and synthesis method rather than relying on departmental or individual practice.
 
-**Verification:** Buyer and user personas share one structure, name an owner, carry the date of their last refresh and the date of the next, and that refresh has happened at least once on schedule.
+**Verification:** Buyer and user personas share one structure, name an owner, carry the date of their last refresh and either the date of the next or the condition that occasions one, and at least one refresh has happened as the set said it would, by the method, revising the set in place or as a new edition that carries the earlier forward and states what changed.
 
 ### B — Modeled
 
-Buyer and user personas are refreshed on a defined cadence using a consistent AI-assisted research and synthesis method and selected research, usage, or feedback data. They remain one function's, typically Product's for user personas and Marketing's for buyer personas. Other functions receive periodic document renderings, or nothing, rather than consuming a shared, live persona-intelligence system directly.
+Buyer and user personas are refreshed in episodes — on a defined cadence, or when a launch or a decision needs them current — using a consistent AI-assisted research and synthesis method and selected research, usage, or feedback data, and each refresh revises the one kept set. They remain one function's, typically Product's for user personas and Marketing's for buyer personas. Other functions receive periodic document renderings, or nothing, rather than consuming a shared, live persona-intelligence system directly.
 
 **Transition from B to C**
 
-Move from periodic persona maintenance and document distribution to a live shared intelligence system. Connect persona attributes to ongoing research, usage, and feedback signals; establish common underlying data and AI intelligence; and extend direct access across Product, Marketing, Sales, and Engineering.
+Move from personas refreshed in episodes and distributed as documents to a live shared intelligence system. Connect persona attributes to ongoing research, usage, and feedback signals; establish common underlying data and AI intelligence; and extend direct access across Product, Marketing, Sales, and Engineering.
 
 **Verification:** A new research, usage, or feedback signal changes a persona attribute in the shared system without a document being reissued, and a Marketing, Sales, or Engineering participant sees the change at the source.
 
@@ -140,23 +142,23 @@ Positioning was defined at a point in time, such as product launch, and competit
 
 **Transition from A to B**
 
-Establish a consistent AI-assisted competitive-monitoring method on a defined cadence. Require a minimum output set — including the competitor landscape, messaging differentiation, and positioning thesis — rather than initiating analysis only when a visible competitive threat appears.
+Establish a consistent AI-assisted competitive-monitoring method and one kept record of the landscape. Require a minimum output set — including the competitor landscape, messaging differentiation, and positioning thesis — produced into that record by the same method every time the work is done, rather than analysis of only the competitor or threat at hand.
 
-**Verification:** Competitive monitoring has run on its cadence at least twice, each run producing the minimum output set — competitor landscape, messaging differentiation, positioning thesis — and the latest run was not triggered by a competitive event.
+**Verification:** The minimum output set — competitor landscape, messaging differentiation, positioning thesis — exists in one kept record, produced by one written AI-assisted method, each entry dated, and the record has been worked at least twice by that method, the later work revising the earlier, in place or as a new edition that carries the earlier forward and states what changed, rather than starting again, and the latest work was not only a response to a visible competitive threat.
 
 ### B — Modeled
 
-Competitive monitoring runs on a defined cadence using a consistent AI-assisted method. It remains one function's exercise, typically Product's, Strategy's, or Marketing's: findings inform that function's own roadmap and positioning discussions but are not routinely packaged for the other functions that need them.
+Competitive monitoring has a consistent AI-assisted method and one kept record, but the record is as current as the last time it was worked — a scheduled scan, or the last question that sent someone back to it — so a question can find it stale and wait for the work. It remains one function's exercise, typically Product's, Strategy's, or Marketing's: findings inform that function's own roadmap and positioning discussions but are not routinely packaged for the other functions that need them.
 
 **Transition from B to C**
 
-Move from cadence-based to continuous competitive monitoring. Replace scheduled scans with a standing feed of competitor, market, pricing, and messaging signals. Maintain the positioning and strategic differentiation thesis as living intelligence rather than a launch artifact.
+Move from a record worked in episodes to a landscape kept current. Work the competitor, market, pricing, and messaging signals continuously, so that a competitor's change is in the record before anyone asks about it and a question is answered from the record as it stands. Maintain the positioning and strategic differentiation thesis as living intelligence rather than a launch artifact.
 
-**Verification:** A competitor's pricing, product, or messaging change appears in the competitive feed before anyone circulates it by hand, and the positioning thesis carries a revision dated after launch.
+**Verification:** A competitor's pricing, product, or messaging change is in the competitive record, dated, before anyone asks about it or circulates it by hand; a question about the landscape is answered from the record as it already stood, with any question that had to wait for new work recorded as a gap; and the positioning thesis carries a revision dated after launch.
 
 ### C — Continuous
 
-Competitive monitoring becomes continuous. A live feed of market, pricing, product, and messaging shifts updates on an ongoing basis. Positioning and the strategic differentiation thesis remain primarily owned by Product or Strategy, although other functions can request access to current intelligence.
+Competitive monitoring keeps the landscape current rather than scanning it in episodes. Market, pricing, product, and messaging shifts are worked into the record on an ongoing basis, so the answer to a question is already there when it arrives. Positioning and the strategic differentiation thesis remain primarily owned by Product or Strategy, although other functions can request access to current intelligence.
 
 **Transition from C to D**
 
@@ -166,7 +168,7 @@ Open the competitive model as a shared asset. Product, Marketing, and Sales Enab
 
 ### D — Integral
 
-The continuous competitive intelligence feed is a shared asset. Product, Marketing, and Sales Enablement draw directly from the same underlying competitive model rather than commissioning separate research or maintaining a feed of their own. The organization's positioning and strategic differentiation thesis are explicitly maintained and versioned as living artifacts. Each function still produces its own context-specific rendering manually.
+The competitive record, kept current, is a shared asset. Product, Marketing, and Sales Enablement draw directly from the same underlying competitive model rather than commissioning separate research or maintaining a record of their own. The organization's positioning and strategic differentiation thesis are explicitly maintained and versioned as living artifacts. Each function still produces its own context-specific rendering manually.
 
 **Transition from D to E**
 
@@ -230,6 +232,8 @@ As ratified and issued (2026-07-23):
 6. Changes to D1–D3 are made here first and propagated atomically.
 7. Prior locally maintained D1–D3 text remains available as superseded history, not current authority — see `d1-d3-superseded-v1.1.0.md`.
 
+(v1.3, 2026-10-18: rule 2 reads today as "Each model that inherits D1–D3 does so by reference, as its basis line states." The ratified wording above is kept as issued.)
+
 ## Reconciliation record
 
 This document is the ratified output of the D1–D3 reconciliation (2026-07-23) between the predecessor D1–D3 text (`d1-d3-superseded-v1.1.0.md`, locked in this repo's own `v1.1.0` release) and the Shared Intelligence Layer candidate first drafted 2026-07-22. Fourteen of fifteen maturity cells were adopted unchanged or adopted with clarification only — no maturity-state shift. **One real maturity-state revision:** D2-B moves from "AI assistance is ad hoc" (predecessor) to "a consistent AI-assisted research and synthesis method" (candidate, adopted here), reasoned from coherence with D1-B and D3-B, which already use identical cadence/method language at that letter. Full reconciliation methodology, the five-axis test, and the complete fifteen-cell disposition table are recorded in the governing corpus at `briefs/2026-07-23-d1-d3-reconciliation/01b-d1-d3-reconciliation-record.md` (`OKF TOGAF` repo).
@@ -238,6 +242,7 @@ This document is the ratified output of the D1–D3 reconciliation (2026-07-23) 
 
 ## Changelog
 
+- **v1.3 — 2026-10-18.** D1–D3 measure the state of the organization's intelligence — whether the answer to a question is already there, and current, when the question arrives — not the events that update it. **B** is one written AI-assisted method and one kept corpus, record or set, as current as the last time it was worked, whether a schedule or a question occasioned the work; the later work revises the earlier, in place or as a new edition that carries the earlier forward and states what changed. **C** is a corpus kept current, so a question is answered from it as it already stood, the answering entries dated before the question, and any question that had to wait recorded as a gap; notifying people unprompted is not what C asks. D and E are unchanged but for one word: D3 at D reads "the competitive record, kept current" and "a record of their own", where it said "feed". **Three stated changes: a D1, D2 or D3 score of A under v1.2 for want of a cadence may read B under v1.3; a C under v1.2 that rested on a feed, with no evidence that questions are answered from it as it stood, may read B; and a B under v1.2 whose cycles each start afresh, with nothing kept for the next to build on, may read A.** A B under v1.2 reads B where each edition carries the last forward and states what changed. Changed: seven level texts (D1 A, B and C; D2 B; D3 B, C and D), five verification lines (D1 A→B and B→C; D2 A→B; D3 A→B and B→C) and six transitions; and a reading sentence under "How to read this layer", placed after the paragraph on renderings rather than where the draft put it. The lists of the models that inherit the layer are removed under STD-MODEL-PARTS v1.1 §3.7: the header and the chair paragraph name no models, and canonical-source rule 2 keeps its ratified wording with a dated note giving its current reading; the lifecycle interfaces stay, for the parts standard's next version. By the reconciliation record's five-axis test, the B cells move on two axes by design: cadence, where periodic and event-driven work both count, and representation, where one kept corpus that later work revises is now asked for; method, ownership and AI role are unchanged; the C cells stay continuous on that axis, and what changes is the evidence asked of it, answers dated before the question, which is why a C may read B; D1 A and D3 D are clarified only. Ratified by David Facer ("I ratify STD-SHARED-INTELLIGENCE v1.3 and SPEC-D6-SCORE v1.6 as 480-CC prepares them, with 235-DT2's fix and answers and 236-DT2's list removals, as 483-CC applies them -- David Facer 10/18/2026"), drafted by DTOG (OKF TOGAF `briefs/2026-10-01-svm-tranche-3/DTOG-sil-on-demand-v0.2.md`), traced by DT2 (`233-DT2` to `236-DT2`). Work Item OKF-TOGAF#213.
 - **v1.2 — 2026-10-16.** D1–D3 read the same from every function's chair. Where they named Product as the owner below D, they name one function, typically Product; a reading-from-a-chair paragraph is added under "How to read this layer"; at the step to D and at D they name Product among the consumers. Below D no maturity state moves, by the reconciliation record's five-axis test run on every changed passage (OKF TOGAF `briefs/2026-10-01-svm-tranche-3/195-DT2` and `196-DT2`). **At D, market discovery (D1) and positioning and competitive intelligence (D3) now also require that no function keeps its own version, as persona development (D2) already did, so a D1 or D3 score of D under v1.1 may read C under v1.2** — a stated change, taken as one. D2 at D now says each buyer and user persona is kept once, in the shared set. Ratified by David Facer ("I ratify STD-SHARED-INTELLIGENCE v1.2 as DTOG-200-fixes settles it, with Fix 1's last clause as 196-DT2 replaces it ... -- David Facer 10/15/2026"), drafted by DTOG (OKF TOGAF `briefs/2026-10-01-svm-tranche-3/product-marketing-model/`), tested by DT2. Work Item OKF-TOGAF#200, spun off from #198 (the AI-Native Product Marketing Maturity Model, which will inherit these three dimensions by reference).
 - **v1.1 — 2026-10-06.** Twelve verification statements added, one after each D1–D3 transition, in the form the D4+ dimensions already use. Ratified by David Facer ("I ratify #143's twelve clauses. Ship D11. David Facer 10/6/2026"), drafted by DTOG (OKF TOGAF `briefs/dtog/`, 2026-10-02, section 3). No level, transition or sustainment text changed. Several transitions already carried a test sentence in their prose; the statement makes it explicit without removing it.
 - **v1.0.0 — 2026-07-23.** Initial canonical registration. Ratified by David Facer ("I ratify the D1–D3 reconciliation — David, 7/23/26"). Ends this repo's own D1–D3 maintenance; see `ai_native_sdlc_maturity_model.md`'s D1–D3 section for the inheritance pointer, and `d1-d3-superseded-v1.1.0.md` for the preserved predecessor text.

@@ -1,6 +1,6 @@
 # AI-Native SDLC Maturity Model — working framework
 
-**Version 1.4.3 — 2026-10-17.** Layout only: the matrix and the shared layer are in the model family's common form (STD-MODEL-PARTS v1.1), and the matrix is the one home of D4–D13's transitions and verification lines. Since v1.4.2, the level names have one home, `family_maturity_levels.md` (`STD-FAMILY-LEVELS` v1.0), added in this release; the matrix carries the five names and a pointer to it. D1–D3 are inherited by reference from `shared_intelligence_layer.md` (`STD-SHARED-INTELLIGENCE` v1.2) and read the same from every function's chair; at D, D1 and D3 now also require that no function keeps its own version. Every release since v1.0.0 (2026-07-19) is in `CHANGELOG.md`, and each is tagged.
+**Version 1.5.0 — 2026-10-18.** D1–D3 are inherited by reference from `shared_intelligence_layer.md` (`STD-SHARED-INTELLIGENCE` v1.3), which measures how current an organization's market, persona and competitive intelligence is when a question arrives, not how often it is updated: one consistent method and one kept body of intelligence is B, whether a schedule or a question set the work off, and C is the answer already there, dated before the question. The matrix and the shared layer are in the model family's common form (STD-MODEL-PARTS v1.1), and the level names have one home, `family_maturity_levels.md` (`STD-FAMILY-LEVELS` v1.0). Every release since v1.0.0 (2026-07-19) is in `CHANGELOG.md`, and each is tagged.
 
 **Versions.** The release tag versions the repository, and the model's version line names the tag it is at, every release (STD-MODEL-PARTS v1.1 §4C). `CHANGELOG.md` says what each release changed.
 
@@ -141,7 +141,7 @@ Locked baseline. All 13 dimensions defined A–E. The open items above are carri
 
 - `ai_native_sdlc_maturity_model.xlsx` — the full A–E maturity matrix for all 13 dimensions (D1–D3 and D11 pending regeneration — see `shared_intelligence_layer.md` and `CHANGELOG.md` v1.3.0)
 - `ai_native_sdlc_maturity_model.md` — markdown version of the matrix for D4–D13; D1–D3 inherited by reference (2026-07-23)
-- `shared_intelligence_layer.md` — canonical D1–D3 source (`STD-SHARED-INTELLIGENCE` v1.2)
+- `shared_intelligence_layer.md` — canonical D1–D3 source (`STD-SHARED-INTELLIGENCE` v1.3)
 - `family_maturity_levels.md` — the five level names, their one-line descriptions and the general shape (`STD-FAMILY-LEVELS` v1.0), the one home every model's names section points to
 - `short_form.yml` — one-sentence-per-cell compression of all 13 dimensions, derived from this matrix and `shared_intelligence_layer.md`, for consumption by external sites (e.g. aimaturitymodels.com's Whole-Model View); not a source of truth, regenerate if it diverges
 - `deep_dives/` — narrative-style Per-Dimension Deep-Dive content (one file per dimension), for aimaturitymodels.com's Deep-Dive pages; derived from this matrix and `shared_intelligence_layer.md`, not independently versioned

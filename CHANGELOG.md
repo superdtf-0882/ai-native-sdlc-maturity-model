@@ -2,6 +2,20 @@
 
 All notable changes to the model are documented here. The model is a living document by design (Design Principle 10); this file is where its evolution is visible at a glance. Feedback and its disposition are tracked separately in `feedback_log.md`.
 
+## v1.5.0 — 2026-10-18
+
+**D1–D3 measure how current the intelligence is when a question arrives, not how often it is updated.** `shared_intelligence_layer.md` moves to STD-SHARED-INTELLIGENCE v1.3, ratified by David Facer ("I ratify STD-SHARED-INTELLIGENCE v1.3 and SPEC-D6-SCORE v1.6 as 480-CC prepares them, with 235-DT2's fix and answers and 236-DT2's list removals, as 483-CC applies them -- David Facer 10/18/2026"), drafted by DTOG and traced by DT2.
+
+**Three kinds of D1–D3 score against v1.4.x are not comparable with scores against v1.5.0.** An A for want of a cadence may read B, where one written method and one kept body of intelligence exist and the later work revises the earlier. A C that rested on a feed, with no evidence that questions are answered from it as it stood, may read B. A B whose cycles each start afresh, with nothing kept for the next to build on, may read A; a B where each edition carries the last forward and states what changed reads B.
+
+Changed, in `shared_intelligence_layer.md`:
+- B in each dimension: one method and one kept corpus, record or set, current as of the last time it was worked, whether a schedule or a question occasioned the work.
+- C in D1 and D3: the answer already there when the question arrives, the answering entries dated before it, and any question that had to wait recorded as a gap. D2's C is unchanged.
+- D3 at D: "the competitive record, kept current" and "a record of their own", where it said "feed".
+- A reading sentence under "How to read this layer", and the lists of the models that inherit the layer removed (STD-MODEL-PARTS v1.1 §3.7).
+
+In the matrix: the basis line, the D1–D3 section and the closing status line cite the layer at v1.3. No D4–D13 text changed. The short form's D3 B and C cells are re-compressed for the new definitions. Work Item OKF-TOGAF#213.
+
 ## v1.4.3 — 2026-10-17
 
 **Layout only: text-neutral under STD-MODEL-PARTS v1.1.** The matrix and the shared layer move into the family's common form (§5.2): levels as `### A — Nascent` headings, transitions as `**Transition from A to B** — <title>` with every title kept, each sustainment as one `**Sustainment:**` paragraph, the layer's three vantage paragraphs marked `**Vantage:**`, and every paragraph one line. The reading rules take the common title, "How to read this model", and the boundaries "Cross-dimension boundaries". A basis line under `## D1–D3.` names the layer's home. `sdlc_transition_states_d4_d13.md` is retired: the matrix is the one home of D4–D13's transitions and verification lines (§3.2), as David Facer named it in ratifying STD-MODEL-PARTS; the file can still be read at v1.4.2. It had drifted from the matrix in seven passages since the notes were folded into the matrix on 2026-07-27: six by punctuation, and D12's sustainment by words, where the file kept "sanction/runtime" and the matrix reads "delivery-runtime". The matrix's text is the model's and stands; the file's goes with it. The README states the version rule of §4C. No word of any level, transition, verification, sustainment, definition, reading rule, threshold state or boundary changed, as the release check's text-neutral test shows against v1.4.2; scores against v1.4.2 are unaffected. STD-SHARED-INTELLIGENCE v1.2, unchanged. `tools/release-check.js` and `tools/model-parser.js` are the practice's template's current copies. Work Item OKF-TOGAF#205.
