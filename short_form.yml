@@ -20,7 +20,7 @@
 #
 # Full definitions, transitions, and reasoning live in
 # ai_native_sdlc_maturity_model.md (D4-D13) and shared_intelligence_layer.md
-# (D1-D3, STD-SHARED-INTELLIGENCE v1.2) -- this file is a compression of
+# (D1-D3, STD-SHARED-INTELLIGENCE v1.3) -- this file is a compression of
 # those, not a replacement for them.
 #
 # PROVENANCE (briefs/2026-07-25-compression-provenance/): this compression
@@ -85,6 +85,17 @@
 #   transitions and sustainment compared by the family parser, 156 fields,
 #   all identical. No cell text is changed.
 #
+# RE-VERIFIED 2026-10-18 against b070916 (the text commit of v1.5.0), per cell:
+#   * the 15 D1-D3 level definition paragraphs compared at 5c59b11 and at
+#     b070916; D4-D13 untouched by the release
+#   * 7 changed (D1.A-C, D2.B, D3.B-D) for STD-SHARED-INTELLIGENCE v1.3:
+#     B a kept corpus worked in episodes, C a corpus current when the
+#     question arrives; 8 byte-identical
+#   * each of the 7 read against its new definition: D3.B and D3.C
+#     re-compressed, 9 and 8 words, since "one function's own cadence" and
+#     "not periodic" named the cadence the new text no longer measures;
+#     the other 5 still hold, so their text is unchanged
+#
 # THE CHECK NOW CITES source_matrix_commit AND NOT THE TAG. As originally
 # written it hardcoded v1.2.0, so once any commit landed past that tag it
 # would report stale forever regardless of content -- which is what it did
@@ -99,8 +110,8 @@
 # transition notes move these files without touching what is compressed.
 
 version: "1.2.0"
-source_matrix_version: "1.4.3"
-source_matrix_commit: "5c59b118314c561a24fefe344b01dc95a5b84985"
+source_matrix_version: "1.5.0"
+source_matrix_commit: "b070916236e073b4fa1e4d4acbf7fc0291a2bb2f"
 generated: "2026-07-24"
 
 dimensions:
@@ -126,8 +137,8 @@ dimensions:
     title: "Positioning & competitive intelligence"
     levels:
       A: "Ad hoc AI use, no shared method, inconsistent."
-      B: "Consistent AI monitoring exists, one function's own cadence."
-      C: "AI competitive monitoring is continuous now, not periodic."
+      B: "Consistent AI monitoring, one record, current only when worked."
+      C: "AI keeps the competitive record current, not episodic."
       D: "Functions draw on shared AI model, still hand-rendering."
       E: "AI auto-generates each function's positioning view directly."
 
